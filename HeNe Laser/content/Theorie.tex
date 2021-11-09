@@ -99,5 +99,25 @@ Oszillator. Für ihn gilt die Stabilitätsbediung:
 Wobei die Konstanten $g_i$ charakteristische Größen der Anordnung sind und sich mit der Rsonatorlänge $L$ und dem
 Krümmungsradius des Spiegels $r_i$ über $g_i=1-\frac{L}{r_i}$ ergeben.
 
+\subsection{Moden}
+\label{sec:Moden}
+Da die Wellenlänge $\lambda$ sehr viel kleiner ist als die Resonatorlänge $L$ kann eine Vielzahl von Frquenzen
+zu einer stehenden Welle im Resonator führen. Diese bezeichnet man als Trasnsversalelektromagnetische Moden,
+kurz $TEM_{i,j}$-Moden. Wobei die Indices $i$ und $j$ für die Knotenanzahl in x- und y-Richtung stehen.
+Höhere Moden werden stärker unterdrückt als niedriegere. Die niedrigste Mode $TEM_{00}$ folgt einer Gaußverteilung.
+Um die Feldverteilungen höherer Moden zu berechnen muss die Gaußverteilung mit dem entsprechenden
+Hermitepolynom multipliziert werden. Daraus folgen dann die Hermite-Gauß-Polynome $H(x)$.
+\begin{equation}
+    E_{i,j}(x,y)\propto H_i(x)H_j(y)e^{\frac{x^2}{2}}
+\end{equation}
 
+Die Intensität $I$ ergibt sich über $I\propto |E_{i,j}(x,y)|^2$:
+\begin{equation}
+    I\propto I_0|H_i(x)H_j(y)e^{\frac{x^2}{2}}|^2
+\end{equation}
 
+Für die $TEM_{00}$-Mode gilt also:
+\begin{equation}
+    I(r)=I_0e^{\frac{-2r^2}{\omega^2}}
+\end{equation}
+mit der Strahldivergenz $\omega$, dem Abstand zum Strahlmittelpunkt $r$ und der Maximalintensität $I_0$.
