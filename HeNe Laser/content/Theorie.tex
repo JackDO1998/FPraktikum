@@ -40,5 +40,45 @@ das System ebenfalls in $n_2$ wird dann aber von einem Photon getroffen und fäl
 eines dem einfallenden Photon in Raumrichtung und Phase gleichenden Photons zurück auf $n_1$. Dieser letzte
 Prozess führt dazu das dass Laserlicht nur in Richtung der Strahlachse verstärkt wird, kohärent ist, und
 falls Brewsterfenster verwendet werden, auch linear polarisiert ist. Die einfallenden Energiequante müssen 
-energetisch jeweils dem Energieunterschied von $n_1$ und $n_2$ entsprechen.
+energetisch jeweils dem Energieunterschied von $n_1$ und $n_2$ entsprechen. Die häufigkeit des vorkommens der
+einzelnen Prozesse, also der Anzahl der pro Zeit- und Voulumeneinheit absorbierten bzw. emmitierten Photonen
+$\dot{N}$ kann mit den Einsteinkoeffizienten $A_{21}$, $B_{21}$ und $B_{12}$ geschrieben werden als:
+\begin{equation}
+    \dot{N_A}=n_1\rho(v)B_{12}
+\end{equation}
+
+
+\begin{equation}
+    \dot{N_{St.E}}=n_2\rho(v)B_{21}
+\end{equation}
+
+
+\begin{equation}
+    \dot{N_{Sp.E}}=n_2\rho(v)A_{21}
+\end{equation}
+
+Wobei $\rho(v)$ die Energiedichte der Strahlung bezeichnet. Die Einsteinkoeffizienten geben 
+Übergangswahrscheinlichkeiten für die Übergänge ihrer Indices an.
+Das Verhalten der Besetzungen in der Zeit kann für den verlustfreien Fall beschrieben werden durch:
+\begin{equation}
+    \label{eq:1}
+    \frac{dn_1}{dt}=\rho(-n_1B_{12}+n_2B_{21})+n_2A_{21}
+\end{equation}
+
+
+\begin{equation}
+    \label{eq:2}
+    \frac{dn_1}{dt}=\rho(n_1B_{12}-n_2B_{21})-n_2A_{21}
+\end{equation}
+
+
+\subsection{Besetzungsinversion}
+\label{sec:Besetzungsinversion}
+Besetzungsinversion bezeichnet den Zustand eines Gesamtsystems in welchem der angeregte Zustand von 
+Einzelsystemen häufiger besetzt ist als der nicht angeregte Zustand. Besetzungsinversion ist ein notwendiges
+Kriterium damit die stimulierte Emmission öfter vorkommt als die spontane Emmission und es so also zu einer
+Verstärkung kommt. Nach den Gleichungen \autoref{eq:1} und \autoref{eq:2} kann es im thermodynamischen
+Gleichgewicht jedoch nicht zu einer Besetzungsinversion kommen, da das System einer Maxwell-Boltzmann-Verteilung 
+folgt. Diese kann nur durch permanentes pumpen erreicht werden. Die verstärkung der Strahlung hängt dann
+exponentiell mit der Länge des verstärkenden Mediums zusammen.
 
