@@ -1,0 +1,239 @@
+
+
+
+\section{Auswertung}
+\label{sec:auswertung}
+
+In diesem Kapitel werden die aufgenommenen Messwerte ausgewertet.
+
+
+
+
+
+\subsection{Resonatorstabilität}
+\label{sec:resonatorstabilität}
+
+
+In diesem Abschnitt wird die Stabilitätsbedinung hinsichtlich der maximal möglichen Resonatorlänge überprüft.
+Die maximalen Resonatorlängen $L$, bei der der Laserbetrieb stabil war, finden sich in \autoref{tab:maximale Resonatorlängen}. 
+Die verwendeten Spiegel hatten die Krümmungsradien $r_1$ und $r_2$.
+
+
+
+
+
+Aus der Stabilitätsbedingung aus \autoref{sec:Resonator} ergeben sich die maximalen theoretisch stabilen Resonatorlängen zu:
+
+\begin{equation}
+L_{max} = \text{2,8}\,\text{m} \ \ \ \text{für}\  r_1, r_2 = 1400\,\text{mm}
+\label{eq:Lmax1}
+\end{equation}
+\begin{equation}
+L_{max} = \text{1,4}\,\text{m} \ \ \ \text{für}\  r_1 = \infty, r_2 = 1400\,\text{mm}
+\label{eq:Lmax2}
+\end{equation}
+
+
+
+
+
+
+
+
+
+\subsection{TEM-Moden}
+\label{sec:TEM-Moden}
+
+Dieser Abschnitt behandelt die Auswertung der Messung zweier TEM-Moden.
+Die Stromstärke der Photodiode ist proportional zur Lichtintensität und wird daher hier als Maß für selbige behandelt. Die Messung der Intensität für die Fundamentalmode $\text{TEM}_{00}$ findet sich in \autoref{tab:TEM_00}. Die der ersten Mode $\text{TEM}_{10}$, in die hier als $x$-Achse definierte Richtung, findet sich in \autoref{tab:TEM_10}.
+
+
+
+Die Funktion $I_{00}$ wurde an die Messwerte aus \autoref{tab:TEM_00} angepasst, die Funktion $I_{10}$ an die aus \autoref{tab:TEM_10}, um den theoretischen Verlauf mit den Messwerten verlgeichen zu können.
+
+\begin{equation}
+I_{00}(x) = A \cdot e^{-(\frac{x-x_0}{w})^{2}}
+\label{eq:I_00}
+\end{equation}
+
+\begin{equation}
+I_{10}(x) = 2A \cdot (\frac{x-x_0}{w})^{2} \cdot e^{-(\frac{x-x_0}{w})^{2}}
+\label{eq:I_10}
+\end{equation}
+
+Die Parameter für \autoref{eq:I_00} ergaben sich zu:
+\begin{equation}
+A = 7,88 \pm 0,05 \,\mu \text{A}
+\end{equation}
+\begin{equation}
+x_0 =  0,57 \pm 0,04\, \text{mm}
+\end{equation}
+\begin{equation}
+w = 7,09 \pm 0,05\, \text{mm}
+\end{equation}
+
+
+
+Für \autoref{eq:I_10} berechneten sich die Parameter zu:
+\begin{equation}
+A = 2,43 \pm 0,06 \,\mu \text{A}
+\end{equation}
+\begin{equation}
+x_0 =  -0.67 \pm 0,12\, \text{mm}
+\end{equation}
+\begin{equation}
+w = 8.35 \pm 0,12\, \text{mm}
+\end{equation}
+
+
+
+
+In \autoref{fig:TEM_00} sind der Fit der Funktion $I_{00}$ und die Messwerte zur Fundamentalmode aus \autoref{tab:TEM_00} aufgetragen. Die Messwerte aus \autoref{tab:TEM_10} und der Fit der Funktion $I_{10}$ sind in \autoref{fig:TEM_10} zu sehen.
+
+
+
+
+
+
+ 
+\subsection{Polarisation}
+\label{sec:Polarisation}
+
+Dieser Abschnitt befasst sich mit der Auswertung der Polarisation des Lasers. Die gemessene Stahlungsleistung $P$ zu verschiedenen Polarisationswinkeln $\phi$ ist in \autoref{tab:Polarisation} zu sehen. Der Startwinkel $\phi = 0$\,° wurde dabei willkürlich zu Beginn der Messung festgelegt.
+
+
+
+Die Funktion \autoref{eq:Polarisationsfit} wurde an die gemessenen Werte aus \autoref{tab:Polarisation} angepasst und beides danach in \autoref{fig:Polarisation} dargestellt.
+
+
+\begin{equation}
+P(\phi) = P_0\cdot(\cos(\phi - \phi_0)^{2}
+\label{eq:Polarisationsfit}
+\end{equation}
+
+Es ergaben sich die Parameter wie folgt:
+\begin{equation}
+P_0 = (\text{3,83} \pm \text{0,01})\,\text{mW}
+\end{equation}
+\begin{equation}
+\phi_0 = (\text{86,82} \pm \text{0,15})\,\text{°}
+\end{equation}
+
+
+
+
+
+
+
+\subsection{Multimodenbetrieb}
+\label{sec:Multimodenbetrieb}
+
+In diesem Abschnitt werden die Schwebungsfrequenzen, der longitudinalen Moden ausgewertet. 
+Die durch den Spektrumanalysator zu verschiedenen Resonatorlängen $L$ gemessenen Schwebungsfrequenzen finden sich in \autoref{tab:Multimoden}.
+
+
+
+Mittels linearer Regression lässt sich zu jeder Resonatorlänge die Grundfrequenz der Schwebungsfrequenzen ermitteln. Dafür wurde die Funktion \autoref{eq:linMultimoden} an die Messwerte aus \autoref{tab:Multimoden} angepasst. 
+
+\begin{equation}
+\nu (x) = m \cdot x + n
+\label{eq:linMultimoden}
+\end{equation}
+
+Wobei $x$ das ganzzahlige Vielfache der Grundfequenz und $\nu (x)$ die gemessenen Schwebungsfrequenzen angibt. Graphisch beispielhaft für die Resonatorlänge $L = 167,6\,\text{cm}$ in \autoref{fig:linMultimoden} dargestellt.
+
+Der Parameter $m$ entspricht dem Abstand zweier Schwebungsfrequenzen und damit der Grundfrequenz. Die Ergebnisse der Parameterbestimmung zur jeweiligen Resonatorlänge $L$ sind in \autoref{tab:linMultimoden} zu finden.
+
+
+
+Der Frequenzabstand zweier longitudinaler Moden ist gegeben durch:
+
+\begin{equation}
+\delta \nu (L) = \frac{c}{2L}
+\end{equation}
+
+Wobei $c$ die Lichtgeschwindigeit ist. Diese Formel umgestellt nach $L$ erlaubt einen Fit der Funktion
+
+\begin{equation}
+L (\delta \nu) = \frac{c_0}{2\cdot \delta \nu}
+\label{eq:fitMultimoden}
+\end{equation}
+
+mit $c_0$ als freiem Parameter und $m$ aus \autoref{tab:linMultimoden} als Werte für $\delta \nu$. Dabei wurden auch die Standardabweichungen für $m$ berücksichtigt. Die ersten drei Werte, sowie der letzte Wert für $m$ aus \autoref{tab:linMultimoden} weichen sichtlich stark von der Theorie ab und wurden daher zur Parameterbestimmung nicht miteinbezogen. Der Parameter $c_0$ ergab sich zu:
+
+\begin{equation}
+c_0 = (\text{299400884,188} \pm \text{9,146})\, \frac{\text{m}}{\text{s}}
+\end{equation}
+
+In \autoref{fig:Multimoden} sind der Fit der Funktion \autoref{eq:fitMultimoden} und die ermittelten Werte der Grundfrequenzen aus \autoref{tab:linMultimoden} zu sehen. Der Frequenzabstand $\delta \nu$ wurde hier mit $f$ bezeichnet.
+
+
+
+
+
+
+
+\subsection{Wellenlänge}
+\label{sec:Wellenlänge}
+
+In diesem Abschnitt wird die Messung der Abstände der Beugungsmaxima ausgewertet, um daraus die Wellenlänge der Laserstrahlung zu bestimmen.
+Die Messung für ein Gitter mit $100$\,lines/mm und eines mit $600$\,lines/mm ist in \autoref{tab:WellenAbstand} zu sehen.
+
+Innerhalb der Messgenauigkeit gab es keinen Unterschied zwischen den gemessenen Abständen für ein Gitter. Daher ergeben sich die Mittelwerte direkt zu:
+
+\begin{equation}
+x_1 = \text{2,1}\,\text{cm}
+\end{equation}
+\begin{equation}
+x_2 = \text{22,9}\,\text{cm}
+\end{equation}
+
+
+Der Abstand zwischen Gitter und Schirm für die erste Messreihe betrug $l = 31,6$\,cm und $l = 55,7$\,cm für die zweite. Zur Berechnung der Wellenlänge wird die folgende Formel\footnote{https://www.leifiphysik.de/optik/beugung-und-interferenz/grundwissen/vielfachspalt-und-gitter} verwendet
+
+\begin{equation}
+\lambda = \frac{d\cdot \delta x}{\sqrt{l^{2} +  (\delta x)^{2}}}
+\end{equation}
+
+ wobei $d$ den Abstand zwischen zwei Spalten des Gitters bezeichnet. Dieser lässt sich jeweils aus dem Kehrwert von $100$\,lines/mm bzw $600$\,lines/mm berechnen. Daraus ergeben sich die Wellenlängen der beiden Messungen zu:
+
+\begin{equation}
+\lambda = \text{663,1}\,\text{nm}
+\end{equation}
+\begin{equation}
+\lambda = \text{633,7}\,\text{nm}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

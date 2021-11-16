@@ -71,6 +71,29 @@ Das Verhalten der Besetzungen in der Zeit kann für den verlustfreien Fall besch
     \frac{dn_1}{dt}=\rho(n_1B_{12}-n_2B_{21})-n_2A_{21}
 \end{equation}
 
+\subsection{Wellenlänge}
+\label{sec:wellenlaenge}
+\subsection{Thoeretische Wellenlänge}
+Die Wellenlänge des Lasers wird durch den optischen Übergang bestimmt. In diesem Versuch wird 
+hauptsächlich der 3s zu 2p Übergang des Neons betrachtet welcher die intensivste Spektrallienie 
+erzeugt. Der 3s Zustand entspricht einer Energie von $E_{3s}=\SI[]{20.66}[]{eV}$ und der 2p
+Zustand entspricht einer Energie von $E_{2p}=\SI[]{18.70}[]{eV}$. Dieser Übergang führt über
+\begin{equation}
+    \lambda=\frac{hc}{E_{3s}-E_{2p}}
+\end{equation}
+zu einer theoretischen Wellenlänge von $\lambda=\SI[]{632.8}[]{nm}$.
+\subsubsection{Überprüfung der Wellenlänge}
+Die Wellenlänge wird durch beugung am Gitter überprüft. Der Beugungswinkel $\alpha$ hängt
+über die Gitterkonstante $d$ direkt mit der Wellenlänge $\lambda$ zusammen.
+\begin{equation}
+    d\sin(\alpha)=k\lambda
+\end{equation}
+Unter der Annahme kleiner Winkel ($sin(\alpha)=\alpha=tan(\alpha)$) folgt für die Abstände 
+zwischen den Hauptmaxima $b$ auf dem Schirm:
+\begin{equation}
+    b=a\frac{k\lambda}{d}
+\end{equation}
+wobei $a$ den Abstand zwischen Gitter und Schirm beschreibt.
 
 \subsection{Besetzungsinversion}
 \label{sec:Besetzungsinversion}
@@ -101,12 +124,13 @@ Krümmungsradius des Spiegels $r_i$ über $g_i=1-\frac{L}{r_i}$ ergeben.
 
 \subsection{Moden}
 \label{sec:Moden}
-Da die Wellenlänge $\lambda$ sehr viel kleiner ist als die Resonatorlänge $L$ kann eine Vielzahl von Frquenzen
+Da die Wellenlänge $\lambda$ sehr viel kleiner ist als die Resonatorlänge $L$ kann eine Vielzahl von Frequenzen
 zu einer stehenden Welle im Resonator führen. Diese bezeichnet man als Trasnsversalelektromagnetische Moden,
-kurz $TEM_{i,j}$-Moden. Wobei die Indices $i$ und $j$ für die Knotenanzahl in x- und y-Richtung stehen.
+kurz $TEM_{ij}$-Moden. Wobei die Indices $i$ und $j$ für die Knotenanzahl in x- und y-Richtung stehen.
+Neben den transversalen Moden können auch longitudinale Moden entstehen.
 Höhere Moden werden stärker unterdrückt als niedriegere. Die niedrigste Mode $TEM_{00}$ folgt einer Gaußverteilung.
 Um die Feldverteilungen höherer Moden zu berechnen muss die Gaußverteilung mit dem entsprechenden
-Hermitepolynom multipliziert werden. Daraus folgen dann die Hermite-Gauß-Polynome $H(x)$.
+Hermitepolynom multipliziert werden. Daraus folgen dann die Hermitischen Funktionen $H(x)$.
 \begin{equation}
     E_{i,j}(x,y)\propto H_i(x)H_j(y)e^{\frac{x^2}{2}}
 \end{equation}
@@ -118,6 +142,7 @@ Die Intensität $I$ ergibt sich über $I\propto |E_{i,j}(x,y)|^2$:
 
 Für die $TEM_{00}$-Mode gilt also:
 \begin{equation}
-    I(r)=I_0e^{\frac{-2r^2}{\omega^2}}
+    I(r)=I_0e^{\frac{-r^2}{\omega^2}}
 \end{equation}
-mit der Strahldivergenz $\omega$, dem Abstand zum Strahlmittelpunkt $r$ und der Maximalintensität $I_0$.
+mit der Strahldivergenz $\omega$, dem Abstand zur Strahlsymetrieachse $r$ und der Maximalintensität $I_0$.
+
