@@ -2,6 +2,7 @@
 """
 Created on Wed Dec  1 22:36:07 2021
 @author: janga
+IN DIESEM DOKUMENT AUSWERTUNG ZU AUFGABE a UND b!!!
 """
 import numpy as np
 import matplotlib.pyplot as plt
