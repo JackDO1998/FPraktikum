@@ -96,7 +96,7 @@ plotIV = np.linspace(fIIabfall[0], fIIabfall[len(fIIabfall)-1])
 plotV = np.linspace(0,1e6,1000)
 
 #Plot erstellen
-plt.plot(plotV,  plotV/np.sqrt(2),'k-', label='Lineare Regression')
+#plt.plot(plotV,  plotV/np.sqrt(2),'r-', label=r'$\frac{f}{\sqrt{2}}$')
 plt.plot(plotI, paramsI[0] * plotI + paramsI[1],'k-', label='Lineare Regression')
 plt.plot(plotII, paramsII[0] * plotII + paramsII[1],'k-')
 plt.plot(plotIII,exponentiell(plotIII,*paramsIII), 'b-',label=r'$af^b$')
