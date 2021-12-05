@@ -93,8 +93,10 @@ plotI = np.linspace(fIplateau[0], fIplateau[len(fIplateau)-1])
 plotII = np.linspace(fIIplateau[0], fIIplateau[len(fIIplateau)-1])
 plotIII = np.linspace(fIabfall[0], fIabfall[len(fIabfall)-1])
 plotIV = np.linspace(fIIabfall[0], fIIabfall[len(fIIabfall)-1])
+plotV = np.linspace(0,1e6,1000)
 
 #Plot erstellen
+plt.plot(plotV,  plotV/np.sqrt(2),'k-', label='Lineare Regression')
 plt.plot(plotI, paramsI[0] * plotI + paramsI[1],'k-', label='Lineare Regression')
 plt.plot(plotII, paramsII[0] * plotII + paramsII[1],'k-')
 plt.plot(plotIII,exponentiell(plotIII,*paramsIII), 'b-',label=r'$af^b$')
