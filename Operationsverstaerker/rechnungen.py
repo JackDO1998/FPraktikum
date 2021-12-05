@@ -86,7 +86,7 @@ for name, value, uncertainty in zip('gh', paramsIII, uncertaintiesIII):
     
 paramsIV, covariance_matrixIV = curve_fit(exponentiell, fIIabfall , abfallII, p0=(32000,1))
 uncertaintiesIV = np.sqrt(np.diag(covariance_matrixIV))
-for name, value, uncertainty in zip('gh', paramsIV, uncertaintiesIV): 
+for name, value, uncertainty in zip('ij', paramsIV, uncertaintiesIV): 
     print(f'{name} = {value:8.3f} ± {uncertainty:.3f}')
     
 plotI = np.linspace(fIplateau[0], fIplateau[len(fIplateau)-1])
