@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.constants as const
 from scipy.optimize import curve_fit
-#from uncertainties import ufloat
+from uncertainties import ufloat
 X=[0]
 
 #Daten einlesen
@@ -96,7 +96,8 @@ plotIV = np.linspace(fIIabfall[0], fIIabfall[len(fIIabfall)-1])
 plotV = np.linspace(0,1e6,1000)
 
 #Plot erstellen
-#plt.plot(plotV,  plotV/np.sqrt(2),'r-', label=r'$\frac{f}{\sqrt{2}}$')
+plt.plot(plotV,  plotV*paramsI[1]/(np.sqrt(2)*plotV),'r-', label=r'$\frac{V_max}{\sqrt{2}}$')
+plt.plot(plotV,  (paramsII[1]*plotV)/(np.sqrt(2)*plotV),'r-')
 plt.plot(plotI, paramsI[0] * plotI + paramsI[1],'k-', label='Lineare Regression')
 plt.plot(plotII, paramsII[0] * plotII + paramsII[1],'k-')
 plt.plot(plotIII,exponentiell(plotIII,*paramsIII), 'b-',label=r'$af^b$')
@@ -107,7 +108,7 @@ plt.xscale("log")
 plt.yscale("log")
 plt.title("Verstärkung in abhängigkeit der Frequenz")
 plt.xlabel(r'Frequenz $f$ / Hz')
-plt.ylabel(r'Verstärkungsfaktor $x$')
+plt.ylabel(r'Verstärkungsfaktor $V$')
 plt.legend(loc='best')
 plt.savefig('content/grafiken/verstaerkung.pdf')
 plt.show()
