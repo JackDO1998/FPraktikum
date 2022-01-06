@@ -34,7 +34,33 @@ Dieser Ausdruck lässt sich für $A_0=B_0$ vereinfachen zu:
 \end{equation}
 
 \subsection{Stehwellenverhältnis}
-
+\label{sec:thstehwelle}
+In realen Systemen wird eine Welle nur selten totalreflektiert sondern meist nur teilreflektiert
+und obendrein noch gestreut sodass die rücklaufende Welle gegenüber der hinlaufenden Welle eine
+kleiner Amplitude hat. Nun muss also \autoref{eq:stehendewelle} verwndet werden. Da sich die Wellen 
+jetzt nichtmehr vollständig auslöschen und auch die konstruktive Interferenz weniger wird, ergibt 
+sich eine Welle welche zwischen zwei Niveaus von Feldstärken hin und herschwingt. Die Welle 
+wird wieder zur laufenden Welle welche allerdings eine stehende Welle als Einhüllende hat.
+An dieser stehenden Welle kann das sogenannte Stehwellenverhältnis gemessen werden. Es ist das 
+Verhätnis zwischen der Feldstärke an einem Maximum un der an einem Minimum.
+\begin{equation}
+    \label{eq:stehwellenverhaeltnis}
+    S=\frac{E_{max}}{E_{min}}
+\end{equation}
+Je näher mann der perfekten totalreflexion kommt desto mehr nähert sich S der eins an.
+Das Stehwellenverhältnis wird in diesem Versuch auf zwei weisen ermittelt, zunächst mit der
+später noch genauer erläuterten 3dB-Methode, hier ergibt es sich über:
+\begin{equation}
+    \label{eq:dreidB}
+    S=\sqrt{1+\frac{1}{sin^2(\frac{\pi (x_{links}-x_{rechts})}{\lambda_H})}}
+\end{equation}
+Das kann unter der annahme das das Argument im Sinus ausreichend klein ist und der Bruch an sich 
+dadurch so groß wird das die addierte 1 keine rolle mehr spielt mit der Kleinwinkelnäherung zu folgender
+Formel vereinfacht werden:
+\begin{equation}
+    \label{eq:3dBleicht}
+    S=\frac{\lambda_H}{(x_{links}-x_{rechts})}
+\end{equation}
 
 \subsection{Mikrowellen}
 \label{sec:thallgemein}
@@ -77,7 +103,9 @@ Grundmoden ausbreiten, einerseits die "transversal elektrische" TE-Mode bei der 
 in Ausbreitungsrichtung auweist und andererseits die "transversal magnetische" TM-Mode bei welcher das Magnetfeld
 eine Komponente in Ausbreitungsrichtung aufweist. Die Wellen werden mit $H_{nm}$ bzw. $E_{nm}$
 bezeichnet. n steht hier für die Anzahl der Wellenmaxima in horizontaler Richtung während m für die Anzahl der 
-Wellenmaxima in Vertikaler Richtung steht.
+Wellenmaxima in Vertikaler Richtung steht. Jeder Hohlleiter hat einen charakeristischen frequenzabhängigen
+Wiederstand der Impedanz genannt wird. Er kommt duch den Ohmschen Wiederstand des Materials des Hohlleiters
+und durch Inperfektionen der Oberflächen, an welchen die Wellen gestreut werden, zustande.
 
 \subsection{}
 
