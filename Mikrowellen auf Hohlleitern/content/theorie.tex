@@ -3,7 +3,40 @@
 
 In diesem Kapitel werden die theoretischen Hintergründe dieses Versuches erläutert. Dabei wird insbesondere auf die in der Durchführung verwendeten Schaltungen eingegangen.
 
-\subsection{Mikrowellen allgemein}
+
+\subsection{EM-Wellen}
+\label{sec:themwellen}
+Elektromagnetische Wellen, kurz EM-Wellen sind transversale Wellen. Sie schwingen also senkrecht zu ihrer
+Ausbreitungsrichtung. Dabei steht das magnetische Feld immer senkrecht auf dem elektrischen Feld.
+Im allgemeinsten Fall lassen sie sich durch folgende Gleichung beschreiben:
+\begin{equation}
+    \label{eq:wellenfunktion}
+    A(x,t)=A_0sin(kx+\omega t+\phi_0)
+\end{equation}
+dabei ist $A_0$ die Amplitude, $k$ die Wellenzahl, $x$ der Ort, $\omega$ die Kreisfrequenz, $t$ der Zeitpunkt
+und $\phi$ eine feste Phase weclche meist gleich null gesetzt wird. Eine solche Welle wird als laufend bezeichnet, bei positivem Vorzeichen der Kreisfrequenz
+ist sie linkslaufend sonst rechtslaufend.
+
+
+\subsubsection{Stehende Welle}
+\label{sec:thstehendewelle}
+Wenn eine laufende Welle senkrecht auf eine Grenzfläche trifft und dort totalreflektiert wird,
+interferieren die einlaufende und die auslaufende Welle miteinander ud es entsteht eine Welle
+mit scheinbar ortsfesten Knoten und Bäuchen. Eine solche Welle lässt sich mathematisch durch überlagerung
+einer links- und einer rechtslaufenden Welle schreiben:
+\begin{equation}
+    \label{eq:stehendewelle}
+    A(x,t)=A_0sin(xk+\omega t +\phi_0)+B_0sin(xk-\omega t +\phi_0)
+\end{equation}
+Dieser Ausdruck lässt sich für $A_0=B_0$ vereinfachen zu:
+\begin{equation}
+    A(x,t)=A_0sin(kx)cos(\omega t)
+\end{equation}
+
+\subsection{Stehwellenverhältnis}
+
+
+\subsection{Mikrowellen}
 \label{sec:thallgemein}
 Mikrowellen sind je nach definition Wellen mit Wellenlängen mit Wellenlängen von etlichen zentimetern bis
 zu Bruchteilen von millimetern. Das entspricht Frequenzen von etwa 300 MHz bis 1 THz. In diesem Versuch werden
@@ -45,4 +78,6 @@ in Ausbreitungsrichtung auweist und andererseits die "transversal magnetische" T
 eine Komponente in Ausbreitungsrichtung aufweist. Die Wellen werden mit $H_{nm}$ bzw. $E_{nm}$
 bezeichnet. n steht hier für die Anzahl der Wellenmaxima in horizontaler Richtung während m für die Anzahl der 
 Wellenmaxima in Vertikaler Richtung steht.
+
+\subsection{}
 
