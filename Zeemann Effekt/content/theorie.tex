@@ -1,4 +1,155 @@
-\section{Theorie}
+\section{Theorie} 
 \label{sec:Theorie}
-In diesem Kapitel sollen kurz die theoretischen Grundlagen des HeNe-Lasers erleutert werden.
+
+In diesem Kapitel werden die theoretischen Hintergründe dieses Versuches erläutert.
+
+
+
+\subsection{Energieniveaus und LS-Näherung}
+\label{sec:energieniveaus}
+
+Gebundene Elektronen in einem Atom besitzen diskrete Energien, sogenannte Energieniveaus.
+Ohne Einfluss eines äußeren Magnetfeldes lassen sich diese durch folgende Quantenzahlen charakterisieren:
+
+\begin{flushleft}
+\begin{table}
+\begin{tabular}{c l}
+n&Hauptquantenzahl\\
+l&Neben-/Bahndrehimpulsquantenzahl\\
+$m_l$&Magnetquantenzahl\\
+\end{tabular}
+\end{table}
+\end{flushleft}
+
+Der Spin der Elektronen wechselwirkt mit dem Bahndrehimpuls, was als Spin-Bahn-Kopplung verstanden wird.
+Bei leichten Atomen mit geringer Kernladung spielt diese für die einzelnen Elektronen jedoch eine untergeordnete Rolle, weshalb es sich anbietet hier die sogenannte LS-Kopplung als Näherung zu verwenden.
+In der LS-Kopplung werden die Bahndrehimpulse $\hat{l_i}$ der $N$ Elektronen zu einem Bahndrehimpuls $\hat{L}$ mit Quantenzahl L zusammengefasst durch:
+\begin{equation}
+\hat{L} = \sum_{i=1}^{N} \hat{l_i}
+\end{equation}
+Analog werden die einzelnen Spins $\hat{s_i}$ zu einem Spin $\hat{S}$ mit Quantenzahl S aufaddiert.
+\begin{equation}
+\hat{S} = \sum_{i=1}^{N} \hat{s_i}
+\end{equation}
+Für Berechnungen der Spin-Bahn-Kopplung relevant ist dann der Gesamtdrehimpuls $\hat{J} = \hat{L}+ \hat{S}$. Die zugehörige Quantenzahl ist J.
+Energieniveaus werden in der LS-Näherung in folgender Form angegeben:
+\begin{equation}
+^{2S+1}L_J
+\end{equation}
+Die Bahndrehimpulsquantenzahl L wird dabei durch Buchstaben anstelle von Zahlen gekennzeichnet. Die Buchstaben $S, P, D, F$ entsprechen den Zahlen $0, 1, 2, 3$.
+Im folgenden wird die LS-Kopplung als gegebene und gute Näherung angenommen.
+
+
+
+
+\subsection{normaler Zeeman-Effekt}
+\label{sec:nzeeman}
+
+Unter dem normalen Zeeman-Effekt wird die Aufspaltung derer Energieniveaus, dessen Spinquantenzahl $S = 0$ ist, unter Einfluss eines externen Magnetfeldes verstanden.
+Das aus dem Bahndrehimpuls $\hat{L}$ der Elektronen resultierende magnetische Moment wechselwirkt mit dem externen Magnetfeld und bewirkt eine Aufspaltung des Energieniveaus in $2L+1$ Niveaus.  Bei $L = 0$ findet keine Wechselwirkung und somit keine Aufspaltung in mehrere Niveaus statt.
+Die Verschiebung $\Delta E$ der Energie zum ursprünglichen Energieniveau berechnet sich zu:
+\begin{equation}
+\Delta E = \mu_B B m_L
+\label{eq:nzeeman}
+\end{equation}
+Wobei $\mu_B$ das Bohrsche Magneton und $m_L$ die Magnetquantenzahl zur z-Komponente des Bahndrehimpulses $\hat{L_z}$ bezeichnet.\\
+
+
+
+
+
+
+
+
+\subsection{anormaler Zeeman-Effekt}
+\label{sec:anzeeman}
+
+Ist die Spinquantenzahl $S \neq 0$ so findet selbst bei $L = 0$ unter Einfluss eines schwachen Magnetfeldes eine Aufspaltung der Energiniveaus statt.
+Dieser Effekt wird anormaler Zeeman-Effekt genannt.
+Der Begriff eines schwachen Magnetfeldes bezeichnet hierbei, dass der Einfluss des Magnetfeldes auf die Enegieniveaus kleiner sein soll als der Einfluss der Spin-Bahn-Kopplung.
+Der nicht-verschwindende Spin $\hat{S}$ verursacht einen nicht-verschwindenden Anteil am magnetischen Moment des Atoms.
+Die Wechselwirkung des externen Magnetfeldes findet mit dem Gesamtdrehimpuls $\hat{J}$ statt.
+Die Energieniveaus spalten sich somit in $2J+1$ Niveaus auf.
+Die Verschiebung $\Delta E$ der Energie zum ursprünglichen Energieniveau berechnet sich zu:
+\begin{equation}
+\Delta E = g_J \mu_B B m_J
+\label{eq:anzeeman}
+\end{equation}
+dabei bezeichnet $m_J$ die Magnetquantenzahl zur  z-Komponente des Gesamtdrehimpulses $\hat{J_z}$ und $g_J$ den Landé-Faktor.
+Der Landé-Faktor berechnet sich über:
+\begin{equation}
+g_J = 1+\frac{J(J+1) - L(L+1) + S(S+1)}{2 \cdot J(J+1)}
+\label{eq:lande}
+\end{equation}
+
+
+
+\clearpage
+
+\subsection{Spektrallinien}
+\label{sec:spektral}
+
+Beim Übergang von einem höheren Energieniveau in ein niedrigeres wird elektromagnetische Strahlung emittiert, dessen Energie der Energiedifferenz der beiden Niveaus entspricht.
+Die in diesem Versuch untersuchten Spektrallinien entstehen durch folgende Übergänge von Cadmium:
+\begin{enumerate}
+\item $^1P_1$ $\leftrightarrow$ $^1D_2$
+\begin{description}
+\item[] $\lambda = 643,8$\,nm
+\end{description}	
+\item $^3S_1$ $\leftrightarrow$ $^3P_1$
+\begin{description}
+\item[] $\lambda = 480,0$\,nm
+\end{description}	
+\end{enumerate}
+wobei $\lambda$ die Wellenlänge der emittierten Strahlung des jeweiligen Überganges bezeichnet.\\
+Liegt ein äußeres Magnetfeld an, spaltet sich das Niveau $^1D_2$ in fünf Niveaus auf, während alle anderen Niveaus sich nur in drei aufspalten.
+Erlaubte Übergänge der aufgespaltenen Niveaus sind nur solche bei denen sich $m_J$ nur um maximal $1$ ändert.\\
+Unterschieden werden die Übergänge nach:
+\begin{itemize}
+\item $\Delta m_J = 0$
+\begin{description}
+\item[] Diese Übergange werden $\pi$- Übergange genannt
+\end{description}
+\item $\Delta m_J = \pm 1$
+\begin{description}
+\item[] Diese Übergange werden $\sigma_+$- bzw $\sigma_-$- Übergange genannt
+\end{description}	
+\end{itemize}
+Die Strahlung aus $\pi$-Übergängen ist parallel zum angelegten Magnetfeld polarisiert, während sie bei $\sigma_\pm$-Übergänge in der Ebene senkrecht zum Magnetfeld zirkular polarisiert ist.
+Letztere Polarisation wird in diesem Versuch als senkrecht zum Magnetfeld wahrgenommen, da dies der Projektion zirkular-polarisierter Strahlung auf eine entfernte Ebene parallel zum Magnetfeld entspricht.\\
+Die $\pi$-Übergänge von $^1P_1$ $\leftrightarrow$ $^1D_2$ haben nach \autoref{eq:nzeeman} die gleiche Energieverschiebung, womit sich keine Spektrallinien-Aufspaltung feststellen lässt.
+Bei $^3S_1$ $\leftrightarrow$ $^3P_1$ sind die Energieverschiebungen der beiden Niveaus nach \autoref{eq:anzeeman} aufgrund von verschiedenen Landé-Faktoren unterschiedlich, weshalb die Spektrallinie sich in drei aufteilt. Aufgrund der geringen Aufspaltung bei den, in diesem Versuch verfügbaren, Magnetflussstärken sind diese aber kaum oder gar nicht zu unterscheiden.\\
+Die Spektrallinien der $\sigma_\pm$-Übergänge spalten sich alle auf, aber auch hier ist im Rahmen dieses Experiments nur eine Aufspaltung in jeweils drei Linien unterscheidbar.
+
+
+
+\subsection{Lummer-Gehrcke Platte}
+\label{sec:lgplatte}
+
+Die Lummer-Gehrcke Platte besteht aus einem optischen Element durch das ein einfallender Strahl auf zwei planparallele Platte geleitet wird. Dort wird der Strahl zwischen den beiden Platten hin und her reflektiert und bei jeder Reflexion tritt ein Bruchteil aus der Lummer-Gehrcke Platt aus. Diese Strahlen sind parallel und haben einen äquidistanten Abstand zueinander.\\
+Der Austrittswinkel hängt unter anderem von der Wellenlänge der einfallenden Strahlung ab, wodurch sich damit die Aufspaltung einer Spektrallinie beobachten lässt in Form einer räumlichen Aufteilung der Austretenden Strahlung.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
