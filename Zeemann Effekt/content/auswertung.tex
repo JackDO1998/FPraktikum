@@ -30,16 +30,39 @@ sind in \autoref{tab:LGPlatte} dargestellt.
     \caption{Wellenlängenabhängige Werte der Lummer-Gehrke Platte.}
     \label{tab:LGPlatte}
     \sisetup{table-format=1.2}
-    \begin{tabular}{S[table-format=3.2] S | S S [table-format=3.2]}
+    \begin{tabular}{S[table-format=3.2] | S S S [table-format=3.2]}
       \toprule
       {Größe}&{$\SI[]{643.8}[]{nm}$} & {$\SI[]{480.0}[]{nm}$}\\
       \midrule
-      {A}&{$$209128.59$$}&{$$285458.06$$}\\
-      {$$\Delta\lambda$$}&{$$48.91$$}&{$$26.95$$}\\
+      {$$A$$}&{$$209128.59$$}&{$$285458.06$$}\\
+      {$\Delta \lambda / \si[]{\pico\metre} $}&{$$48.91$$}&{$$26.95$$}\\
       \bottomrule
     \end{tabular}
   \end{table}
 
+  \subsubsection{Bestimmung der Landé-Faktoren}
+  Die Unterschiede in der Aufspaltung der Spektrallinien ist abhängig von den Landé
+Faktoren $g_j$. Für den roten Übergang zwischen den Niveaus $^1 P_1 \leftrightarrow  ^1D_2$ und den blauen
+Übergang zwischen den Niveaus $^3 S_1 \leftrightarrow  ^3P_1$ ergeben sich für die einzelnen Landé Faktoren,
+mit \autoref{eq:lande} die Werte in \autoref{tab:lande}. Mit der Notation $^{2𝑆+}1𝐿_𝑗$ für die Niveaus, wobei
+$L$ der Name des Niveaus ist, welchem ein fester Drehimpuls zugeordnet ist, ergibt sich
+\begin{table}
+  \centering
+    \caption{Berchnung der Landé-Faktoren.}
+    \label{tab:lande}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2] | S S S S S [table-format=3.2]}
+      \toprule
+      {Niveau}&{J}&{S}&{L}  & {$g_j$}\\
+      \midrule
+      {$ ^1 P_1$}&{1}&{0}&{1}&{$1$}\\
+      {$ ^1 D_2$}&{2}&{0}&{2}&{$1$}\\
+      {$ ^3 S_1$}&{1}&{1}&{0}&{$2$}\\
+      {$ ^3 P_1$}&{1}&{1}&{1}&{$\frac{2}{2}$}\\
+      
+      \bottomrule
+    \end{tabular}
+  \end{table}
 \subsection{Vermessung des Elektromagneten}
 Es ist aufgrund des Versuchsaufbaus nicht möglich die magnetische Flussdichte $B$ zwischen den 
 beiden Polschuhen des Elektromagneten zu bestimmen während die Cadmiumdampflampe eingeführt ist.
