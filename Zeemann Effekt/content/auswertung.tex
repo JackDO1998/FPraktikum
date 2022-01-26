@@ -63,6 +63,62 @@ $L$ der Name des Niveaus ist, welchem ein fester Drehimpuls zugeordnet ist, ergi
       \bottomrule
     \end{tabular}
   \end{table}
+  Für die Energiedifferenz zwischen den einzelnen Niveaus ergeben sich nun aus \autoref{eq:nzeeman} 
+  folgend die Werte für den normalen Zeeman Effekt in \autoref{tab:normZeemann}.
+  \begin{table}
+    \centering
+      \caption{Berchnung der Landé-Faktoren des normalen Zeemann-Effektes.}
+      \label{tab:normZeemann}
+      \sisetup{table-format=1.2}
+      \begin{tabular}{S[table-format=3.2]  S S S S S [table-format=3.2]}
+        \toprule
+        {$\SI[]{643.8}[]{\nano \metre}$}&{$$\Delta m =-1$$}&{$$\Delta m =0$$}  & {$$\Delta m =+1$$}\\
+        \midrule
+        {$ $}&{$\mu_BB$}&{$0$}&{$\mu_BB$}\\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+  Für den anormalen Zeeman Effekt können die Faktoren über \autoref{eq:anzeeman} bestimmt werden.
+  Sie sind in \autoref{tab:anormZeemann} dargestellt.
+    \begin{table}
+      \centering
+        \caption{Berchnung der Landé-Faktoren des anormalen Zeemann-Effektes.}
+        \label{tab:anormZeemann}
+        \sisetup{table-format=1.2}
+        \begin{tabular}{S[table-format=3.2]  S S S S S [table-format=3.2]}
+          \toprule
+          {$\SI[]{480.0}[]{\nano \metre}$}&{$$\Delta m =-1$$}&{$$\Delta m =0$$}  & {$$\Delta m =+1$$}\\
+          \midrule
+          {$ $}&{$\frac{3}{2}\mu_BB$}&{$-\frac{1}{2}\mu_BB$}&{$--BB$}\\
+          {$ $}&{$2\mu_BB$}&{$0$}&{$-2\mu_BB$}\\
+          {$ $}&{$--$}&{$\frac{1}{2}\mu_BB$}&{$\frac{3}{2}\mu_BB$}\\
+          \bottomrule
+        \end{tabular}
+      \end{table}
+\subsubsection{Berechnung der optimalen B-Feldstärken}
+Um zu vermeiden das sich Linien überschneiden da sie sich entweder zuweit voneinander entfernen 
+oder nicht weit genug, werden hier die optimalen Feldstärken berechnet.
+Es ergibt sich über:
+\begin{equation}
+  B=\frac{hc}{4\mu_B\lambda^2g_{ij}}=\frac{\Delta E}{\mu_B g_{ij}}
+\end{equation}
+Die sich daraus ergebenden idealen B-Feldstärken sind in \autoref{tab:feldstaerken} dargestellt.
+\begin{table}
+  \centering
+    \caption{Berchnung der Landé-Faktoren des anormalen Zeemann-Effektes.}
+    \label{tab:anormZeemann}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2]  S S S S S [table-format=3.2]}
+      \toprule
+      {$\Delta g_{ij}$}&{$B$/T}\\
+      \midrule
+      {$0.5$}&{$1.25$}\\
+      {$1.0$}&{$0.63$}\\
+      {$1.5$}&{$0.42$}\\
+      {$2.0$}&{$0.31$}\\
+      \bottomrule
+    \end{tabular}
+  \end{table}
 \subsection{Vermessung des Elektromagneten}
 Es ist aufgrund des Versuchsaufbaus nicht möglich die magnetische Flussdichte $B$ zwischen den 
 beiden Polschuhen des Elektromagneten zu bestimmen während die Cadmiumdampflampe eingeführt ist.
