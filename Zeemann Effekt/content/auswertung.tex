@@ -20,8 +20,25 @@ sind:
 Für diesen Versuchsaufbau ergeben sich die Wellenlängenabhängigen Brechungsindizes:
 \begin{center}
   $n_{rot}=1.4567$ und
-  $n_{blau}=1.4635$
+  $n_{blau}=1.4635$.
 \end{center}
+Mit diesen Angaben kann dann über \autoref{eq:aufloesungsvermoegen} das Auflösungsvermögen $A$ und über
+\autoref{eq:dispersionsgebiet} das Dispersionsgebiet $\Delta\lambda$ berechnet werden. Die Ergebnisse
+sind in \autoref{tab:LGPlatte} dargestellt.
+\begin{table}
+  \centering
+    \caption{Wellenlängenabhängige Werte der Lummer-Gehrke Platte.}
+    \label{tab:LGPlatte}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2] S | S S [table-format=3.2]}
+      \toprule
+      {Größe}&{$\SI[]{643.8}[]{nm}$} & {$\SI[]{480.0}[]{nm}$}\\
+      \midrule
+      {A}&{$$209128.59$$}&{$$285458.06$$}\\
+      {$$\Delta\lambda$$}&{$$48.91$$}&{$$26.95$$}\\
+      \bottomrule
+    \end{tabular}
+  \end{table}
 
 \subsection{Vermessung des Elektromagneten}
 Es ist aufgrund des Versuchsaufbaus nicht möglich die magnetische Flussdichte $B$ zwischen den 
