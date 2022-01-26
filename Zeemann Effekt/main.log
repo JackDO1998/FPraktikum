@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  19 JAN 2022 14:22
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  24 JAN 2022 16:02
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1689,33 +1689,66 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
  [2
 
 ]
-(./content/ziel.tex) (./content/theorie.tex) (./content/fehler.tex)
-(./content/durchfuehrung.tex) (./content/auswertung.tex
+(./content/ziel.tex) (./content/theorie.tex [3]
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+
+ []
+
+[4] [5
+
+]) (./content/fehler.tex) (./content/durchfuehrung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+[6]
+<content/grafiken/Aufbau.jpg, id=83, 687.31781pt x 275.52937pt>
+File: content/grafiken/Aufbau.jpg Graphic file (type jpg)
+<use content/grafiken/Aufbau.jpg>
+Package luatex.def Info: content/grafiken/Aufbau.jpg  used on input line 14.
+(luatex.def)             Requested size: 687.31613pt x 275.52869pt.
+
+Overfull \hbox (269.06058pt too wide) in paragraph at lines 14--15
+[][] 
+ []
+
+) (./content/auswertung.tex
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.00053pt on input line 18.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 18.
- [3] [4]
-<content/grafiken/magnetfeld.pdf, id=59, 433.62pt x 289.08pt>
+ [7<./content/grafiken/Aufbau.jpg>]
+<content/grafiken/magnetfeld.pdf, id=94, 433.62pt x 289.08pt>
 File: content/grafiken/magnetfeld.pdf Graphic file (type pdf)
 <use content/grafiken/magnetfeld.pdf>
 Package luatex.def Info: content/grafiken/magnetfeld.pdf  used on input line 63.
 
 (luatex.def)             Requested size: 418.25555pt x 278.85017pt.
-)
-(./content/diskussion.tex)
+ [8]
+("./daten/bearbeitet/blau mit magnet 0 (2)/Daten.tex")
+("./daten/bearbeitet/blau mit magnet 90 (2)/Daten.tex")
+("./daten/bearbeitet/blau ohne magnet 0 (2)/Daten.tex")
+("./daten/bearbeitet/blau ohne magnet 90 (2)/Daten.tex")
+("./daten/bearbeitet/rot mit magnet 0 (2)/Daten.tex")
+("./daten/bearbeitet/rot mit magnet 90 (2)/Daten.tex")
+("./daten/bearbeitet/rot ohne magnet 0 (2)/Daten.tex")
+("./daten/bearbeitet/rot ohne magnet 90 (2)/Daten.tex"))
+(./content/diskussion.tex [9<./content/grafiken/magnetfeld.pdf>] [10] [11]
+[12] [13] [14] [15])
 
 LaTeX Warning: Empty bibliography on input line 24.
 
-[5<./content/grafiken/magnetfeld.pdf>] (./main.aux)
+[16
+
+] (./main.aux)
 
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: E4501FF1794B94E3D00342347911EE85;5378
-(rerunfilecheck)             After:  F1AFB6101FE607D641C893E50CD4B7A7;5505.
+(rerunfilecheck)             Before: 70A948DE34FF1BE1B2E72DB79CDA41AB;10844
+(rerunfilecheck)             After:  D4DB568DEB11D8A085F1CB74DDAFFFE4;10971.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 6FDC4E4D79F72381C07233089C46634A;681.
+(rerunfilecheck)             Checksum: 6443AA58C79BB81DC1AB28ADA44D025B;1123.
 
 LaTeX Warning: There were undefined references.
 
@@ -1730,14 +1763,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35380 strings out of 478903
- 100000,1977958 words of node,token memory allocated
- 754 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 40 attribute, 79 gl
-ue_spec, 22 attribute_list, 1 write nodes
-   avail lists: 1:4,2:1256,3:214,4:36,5:373,6:40,7:3948,8:79,9:492,10:16,11:287
- 53799 multiletter control sequences out of 65536+600000
- 158 fonts using 40957659 bytes
+ 35528 strings out of 478903
+ 125007,1977958 words of node,token memory allocated
+ 826 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 64 attribute, 79 gl
+ue_spec, 34 attribute_list, 1 write nodes
+   avail lists: 1:4,2:6849,3:368,4:40,5:1260,6:41,7:8924,8:77,9:1073,10:18,11:59
+4
+ 53835 multiletter control sequences out of 65536+600000
+ 158 fonts using 40956439 bytes
  110i,15n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texl
 ive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texli
@@ -1747,10 +1781,10 @@ e/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive
 /texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texm
 f-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fo
 nts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (5 pages, 55286 bytes).
+Output written on main.pdf (16 pages, 149127 bytes).
 
-PDF statistics: 192 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 131072)
- 57 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 290 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 131072)
+ 97 words of extra memory for PDF output out of 10000 (max. 100000000)
 

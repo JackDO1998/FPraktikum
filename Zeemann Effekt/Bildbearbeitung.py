@@ -20,10 +20,19 @@ dateiname6='rot mit magnet 90 (2)'
 dateiname7='rot ohne magnet 0 (2)'
 dateiname8='rot ohne magnet 90 (2)'
 
-
-
+def listeneintrag(Nummer,Breite,Helligkeit,speichern):
+    anfang='{$$' 
+    mitte='$$}&{$$'
+    ende='$$}\\'
+    ende2='\\'
+    tuple1=anfang+ str(Nummer) + mitte + str(Breite) + mitte + str(Helligkeit) + ende +ende2
+    datei2=open(speichern,'a') # öffne die datei im append modus ...
+    datei2.write(str(tuple1)) 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.close() # schließe die datei
 
 def linienvermessung(dateiname,helligkeit):
+    
     dateityp='.JPG'
     datei=dateiname+dateityp
     pfad1='daten/Bilder2/'
@@ -32,8 +41,32 @@ def linienvermessung(dateiname,helligkeit):
     sl='/'
     speicherpfad=pfad2 + dateiname
     plot='/Helligkeitsplpot.pdf'
+    tex='/Daten.tex'
     if not os.path.exists(speicherpfad):
         os.makedirs(speicherpfad)
+    if os.path.isfile(speicherpfad+tex)==True:
+        os.remove(speicherpfad+tex)
+    datei2=open(speicherpfad+tex,'a') # öffne die datei im append modus ...
+    datei2.write("\\begin{table}") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("\centering") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("\caption{Daten aus:"+dateiname+".}") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("\label{tab:"+dateiname+"}") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("\sisetup{table-format=1.2}") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("\\begin{tabular}{S[table-format=3.2] S S S [table-format=3.2]}") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("\\toprule") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("{Linie Nr.} & {Breite/[$\si[]{px}$]}&{Helligkeit}\\" + "\\") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("\midrule") 
+    datei2.write("\n")#springe in die nächste zeile
+    
+    datei2.close() # schließe die datei
     img = Image.open(suchpfad)
     width, height = img.size
     zugeschnitten=img.crop((0,height/2,width,height/2+1))
@@ -69,18 +102,25 @@ def linienvermessung(dateiname,helligkeit):
                 d=d+1
                 wert=wert+pix[d,0]
             if b >10:
-                print('Linie Nr.:',c,' Breite:',b,'px   Position:',a,'bis:',d,'   Helligkeit: ',wert/b)
+                listeneintrag(c,b,round(wert/b,2),speicherpfad+tex)
+                
                 c=c+1
             b=0
             a=d
             wert=0
         a=a+1
+    datei2=open(speicherpfad+tex,'a')
+    datei2.write("\\bottomrule") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("\\end{tabular}") 
+    datei2.write("\n")#springe in die nächste zeile
+    datei2.write("\\end{table}") 
+    datei2.write("\n")#springe in die nächste zeile
 
 
 
 
-
-linienvermessung(dateiname1,100)
+linienvermessung(dateiname1,180)
 linienvermessung(dateiname2,175)
 linienvermessung(dateiname3,150)
 linienvermessung(dateiname4,150)
