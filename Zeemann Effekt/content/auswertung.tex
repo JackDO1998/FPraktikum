@@ -35,7 +35,7 @@ sind in \autoref{tab:LGPlatte} dargestellt.
       {Größe}&{$\SI[]{643.8}[]{nm}$} & {$\SI[]{480.0}[]{nm}$}\\
       \midrule
       {$$A$$}&{$$209128.59$$}&{$$285458.06$$}\\
-      {$\Delta \lambda / \si[]{\pico\metre} $}&{$$48.91$$}&{$$26.95$$}\\
+      {$\Delta \lambda_D / \si[]{\pico\metre} $}&{$$48.91$$}&{$$26.95$$}\\
       \bottomrule
     \end{tabular}
   \end{table}
@@ -106,7 +106,7 @@ Die sich daraus ergebenden idealen B-Feldstärken sind in \autoref{tab:feldstaer
 \begin{table}
   \centering
     \caption{Berchnung der Landé-Faktoren des anormalen Zeemann-Effektes.}
-    \label{tab:anormZeemann}
+    \label{tab:feldstaerken}
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2]  S S S S S [table-format=3.2]}
       \toprule
@@ -177,12 +177,165 @@ Hysteresekurve dargestellt.
         \caption{Magnetische Flussdichte des verwendeten Elektromagneten in Abhängigkeit des Spulenstroms.}
         \label{fig:magnetfeld}
       \end{figure}
+\subsection{Vermessung der Spektrallinien}
+\label{sec:linien}
+Um die Linien zu vermessen wurde das Licht aus der Lummer-Geehrke Platte mit einer CAD-Kamera
+aufgenommen. Anschließend wurde mittels eines Python-Programms jeweils die  vertikal mittlere
+Pixelzeile herausgeschnitten und in Graustufen umgerechnet. Die jeweiligen Werte für die Helligkeit wurden 
+gegen die Pixelposition aufgetragen, Die jeweiligen Plots sind in \autoref{sec:plots} zu sehen.  Das Programm 
+zählte dann die  Pixel welche zwischen zwei Maxima liegen. 
+\subsubsection{Die rote Sigma-Linie}
 
-      \input{daten/bearbeitet/blau mit magnet 0 (2)/Daten.tex}
-      \input{daten/bearbeitet/blau mit magnet 90 (2)/Daten.tex}
-      \input{daten/bearbeitet/blau ohne magnet 0 (2)/Daten.tex}
-      \input{daten/bearbeitet/blau ohne magnet 90 (2)/Daten.tex}
-      \input{daten/bearbeitet/rot mit magnet 0 (2)/Daten.tex}
-      \input{daten/bearbeitet/rot mit magnet 90 (2)/Daten.tex}
-      \input{daten/bearbeitet/rot ohne magnet 0 (2)/Daten.tex}
-      \input{daten/bearbeitet/rot ohne magnet 90 (2)/Daten.tex}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{content/grafiken/rot 0.JPG}
+  \caption{Die rote Spektrallienie, oben ohne Magnetfeld, unten mit Magnetfeld.}
+  \label{fig:rot0}
+\end{figure}
+
+Diese Daten sind mit der zugehörigen Wellenlängenverschiebung
+$\delta \lambda$ in \autoref{tab:ergebnisse1} dargestellt. Die Wellenlängenverschiebung berechnet sich über:
+\begin{equation}
+  \delta \lambda =\frac{\delta s}{2\delta S}\Delta \lambda_D
+\end{equation}
+\input{content/tabellen/Tab Rot.tex}
+Aus diesen Daten wurde dann jeweils ein Mittelwert nach \autoref{eq:Mittelwert} mit zugehörigem Fehler nach
+\autoref{eq:mittelwertfehler} berechent.
+
+
+\subsubsection{Die blaue Pi-Linie}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{content/grafiken/blau 90.JPG}
+  \caption{Die rote Spektrallienie, oben ohne Magnetfeld, unten mit Magnetfeld.}
+  \label{fig:blau90}
+\end{figure}
+\input{content/tabellen/Tab Blau.tex}
+
+
+
+\subsubsection{Die blaue Sigma-Linie}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{content/grafiken/blau 90.JPG}
+  \caption{Die rote Spektrallienie, oben ohne Magnetfeld, unten mit Magnetfeld.}
+  \label{fig:blau0}
+\end{figure}
+
+
+
+
+\subsection{Bestimmung der Lanndé-Faktoren}
+Um die Landé Faktoren zu bestimmen, wird von der Formel für die Veränderung der
+Energie \autoref{eq:anzeeman} ausgegangen:
+\begin{equation*}
+  \Delta E = g_{ij} \mu_B B m_J\\
+  \Leftrightarrow g_{ij}=\frac{\Delta E}{\mu_B B} 
+\end{equation*}
+$\mu_B$ ist dabei das Bohrsche Magneton und $g=g_{ij}$ der gewünschte Landé Faktor, nach
+dem direkt umgestellt wurde. In erster Näherung
+\begin{equation*}
+  \Delta E=E(\lambda+\delta \lambda) - E(\lambda)
+\end{equation*}
+ergibt die Taylorentwicklung:
+\begin{equation*}
+  \Delta E=\frac{\delta E}{\delta \lambda} E(\lambda).
+\end{equation*}
+Diese wird mit der quantenmechanischen Energie $E(\lambda)=\frac{hc}{\lambda }$
+in den Landé Faktor eingesetzt und es folgt:
+\begin{equation*}
+  g=\frac{\delta \lambda hc}{\mu_B B \lambda^2}
+\end{equation*}
+Nun können mithilfe der in \autoref{sec:linien} bestimmten Wellenlängenverschiebungen die
+Landé-Faktoren berechnet werden.
+
+
+\begin{table}
+  \centering
+    \caption{Die berechneten Landé-Faktoren}
+    \sisetup{table-format=1.2}
+    \begin{tabular}{S[table-format=3.2] S S S S [table-format=3.2]}
+      \toprule
+      {$\lambda/\si[]{\nano \metre}$} &{Übergang} & {$\delta \lambda / \si[]{\pico \metre}$}&{$g_{j}$}\\
+      \midrule
+      {$648.8$}&{$\sigma$}&{$209.24\pm 29.86$}&{$23.5504\pm $}\\
+      {$480.0$}&{$\sigma$}&{$8.89\pm 0.7$}&{$2.3817\pm $}\\
+      {$480.0$}&{$\pi$}&{$\pm $}&{$\pm $}\\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Helligkeitsplots}
+\label{sec:plots}
+\twocolumn[]
+      
+      \newpage
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{content/grafiken/blau mit magnet 0 gimbplot.pdf}
+        \caption{}
+        \label{fig:bmm0}
+      \end{figure}
+      
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{content/grafiken/blau mit magnet 90 gimbplot.pdf}
+        \caption{}
+        \label{fig:bmm90}
+      \end{figure}
+      
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{content/grafiken/blau ohne magnet 0 gimbplot.pdf}
+        \caption{}
+        \label{fig:bom0}
+      \end{figure}
+      
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{content/grafiken/blau ohne magnet 90 gimbplot.pdf}
+        \caption{}
+        \label{fig:bom90}
+      \end{figure}
+      
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{content/grafiken/rot mit magnet 0 gimbplot.pdf}
+        \caption{}
+        \label{fig:rmm0}
+      \end{figure}
+      
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{content/grafiken/rot mit magnet 90 gimbplot.pdf}
+        \caption{}
+        \label{fig:rmm90}
+      \end{figure}
+      
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{content/grafiken/rot ohne magnet 0 gimbplot.pdf}
+        \caption{}
+        \label{fig:rom0}
+      \end{figure}
+      
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{content/grafiken/rot ohne magnet 90 gimbplot.pdf}
+        \caption{}
+        \label{fig:rom90}
+      \end{figure}
+\onecolumn
