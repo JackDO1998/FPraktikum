@@ -105,7 +105,7 @@ Es ergibt sich über:
 Die sich daraus ergebenden idealen B-Feldstärken sind in \autoref{tab:feldstaerken} dargestellt.
 \begin{table}
   \centering
-    \caption{Berchnung der Landé-Faktoren des anormalen Zeemann-Effektes.}
+    \caption{Berechnung der Landé-Faktoren des anormalen Zeemann-Effektes.}
     \label{tab:feldstaerken}
     \sisetup{table-format=1.2}
     \begin{tabular}{S[table-format=3.2]  S S S S S [table-format=3.2]}
@@ -180,13 +180,18 @@ Hysteresekurve dargestellt.
 \subsection{Vermessung der Spektrallinien}
 \label{sec:linien}
 Um die Linien zu vermessen wurde das Licht aus der Lummer-Geehrke Platte mit einer CAD-Kamera
-aufgenommen. Anschließend wurde mittels eines Python-Programms jeweils die  vertikal mittlere
+aufgenommen. Die aufgenommenen Bilder wurden dann händisch zugeschnitten. 
+Anschließend wurde mittels eines Python-Programms jeweils die  vertikal mittlere
 Pixelzeile herausgeschnitten und in Graustufen umgerechnet. Die jeweiligen Werte für die Helligkeit wurden 
 gegen die Pixelposition aufgetragen, Die jeweiligen Plots sind in \autoref{sec:plots} zu sehen.  Das Programm 
 zählte dann die  Pixel welche zwischen zwei Maxima liegen. 
 \FloatBarrier
 \subsubsection{Die rote Sigma-Linie}
-
+\label{sec:rot}
+Zunächst wird der normale Zeemaneffekt an der roten $\sigma$-Linie der Cadmiumdampflampe vermessen.
+In \autoref{fig:rot0} sind die Aufnahmen der Lummer-Gehrke-Platte zu sehen. Dabei stand der polarisationsfilter
+bei $\phi=\SI[]{90}[]{\degree}$. Im oberen Teil der Grafik ist das Magnetfeld abgeschaltet, im unteren eingeschaltet.
+Im direkten Vergleich ist sofort die Aufspaltung erkennbar.
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{content/grafiken/rot 0.JPG}
@@ -194,41 +199,51 @@ zählte dann die  Pixel welche zwischen zwei Maxima liegen.
   \label{fig:rot0}
 \end{figure}
 
-Diese Daten sind mit der zugehörigen Wellenlängenverschiebung
-$\delta \lambda$ in \autoref{tab:ergebnisse1} dargestellt. Die Wellenlängenverschiebung berechnet sich über:
+Aus den mit dem beschriebenen Programm berechneten Daten wurde dann die Wellenlängenverschiebung $\delta \lambda$
+berechent. Sie ist zusammen mit den gefundenen Daten für $\delta s$ und $\Delta s$ in \autoref{tab:tabelleRot}
+dargestellt. Die Wellenlängenverschiebung berechnet sic über:
+
 \begin{equation}
   \delta \lambda =\frac{\delta s}{2\delta S}\Delta \lambda_D
 \end{equation}
 \input{content/tabellen/Tab Rot.tex}
-Aus diesen Daten wurde dann jeweils ein Mittelwert nach \autoref{eq:Mittelwert} mit zugehörigem Fehler nach
+Aus diesen Daten wurde dann der Mittelwert nach \autoref{eq:Mittelwert} mit zugehörigem Fehler nach
 \autoref{eq:mittelwertfehler} berechent.
 
 \FloatBarrier
 \newpage
 \subsubsection{Die blaue Pi-Linie}
+Um die blaue $\pi$-Linie des annormalen Zeemaneffektes beobachten zu können muss der 
+Aufbau des Experiments geringfügig verändert werden. Als erstes wird der Spalt des optischen 
+Aufbaus so eingestellt das nun die blaue Spektrallienie auf die Lummer-Gehrke-Platte trifft.
+Anschließend wird der Polarisationsfilter auf $\phi=\SI[]{90}[]{\degree}$ eingestellt.
+Dann kann analog zu \autoref{sec:rot} vorgegeangen werden. Die dabei errechenten Werte
+sind in \autoref{tab:tabelleBlau2} dargestellt. In \autoref{fig:blau90} ist der direkte Vergleich
+der $\pi$-Linie mit ein- und ausgeschaltetem Magnetfeld zu sehen.
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{content/grafiken/blau 90.JPG}
   \caption{Die Pi-Linie, oben ohne Magnetfeld, unten mit Magnetfeld.}
   \label{fig:blau90}
 \end{figure}
-\input{content/tabellen/Tab Blau.tex}
+\input{content/tabellen/Tab Blau2.tex}
 
 
 \FloatBarrier
-\newpage
 \subsubsection{Die blaue Sigma-Linie}
+Für die blaue $\sigma$-Linie wurden exakt analog zu  \autoref{sec:rot} vorgegeangen. Die Aufspaltung
+der Linien ist in \autoref{fig:blau0} zu sehen. Die Daten sind zusammen mit ihrem Mittelwert in \autoref{tab:tabelleBlau}
+dargestellt.
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{content/grafiken/blau 90.JPG}
   \caption{Die blaue Sigma-Lienie, oben ohne Magnetfeld, unten mit Magnetfeld.}
   \label{fig:blau0}
 \end{figure}
-\input{content/tabellen/Tab Blau2.tex}
+\input{content/tabellen/Tab Blau.tex}
 
 
 \FloatBarrier
-\newpage
 \subsection{Bestimmung der Lanndé-Faktoren}
 Um die Landé Faktoren zu bestimmen, wird von der Formel für die Veränderung der
 Energie \autoref{eq:anzeeman} ausgegangen:
@@ -273,7 +288,7 @@ Landé-Faktoren berechnet werden.
 
 
 
-
+\FloatBarrier
 
 
 

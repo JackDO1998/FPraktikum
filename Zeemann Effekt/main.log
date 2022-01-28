@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  28 JAN 2022 14:02
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  28 JAN 2022 15:03
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1744,32 +1744,27 @@ File: content/grafiken/magnetfeld.pdf Graphic file (type pdf)
 Package luatex.def Info: content/grafiken/magnetfeld.pdf  used on input line 176
 .
 (luatex.def)             Requested size: 418.25555pt x 278.85017pt.
-<content/grafiken/rot 0.JPG, id=153, 803.0pt x 602.25pt>
+<content/grafiken/rot 0.JPG, id=154, 803.0pt x 602.25pt>
 File: content/grafiken/rot 0.JPG Graphic file (type jpg)
 <use content/grafiken/rot 0.JPG>
-Package luatex.def Info: content/grafiken/rot 0.JPG  used on input line 192.
+Package luatex.def Info: content/grafiken/rot 0.JPG  used on input line 197.
 (luatex.def)             Requested size: 313.69167pt x 235.2717pt.
-
-
-LaTeX Warning: Reference `tab:ergebnisse1' on page 11 undefined on input line 19
-8.
-
-[11<./content/grafiken/magnetfeld.pdf>] ("./content/tabellen/Tab Rot.tex")
-[12<./content/grafiken/rot 0.JPG>]
-<content/grafiken/blau 90.JPG, id=220, 803.0pt x 602.25pt>
+ [11<./content/grafiken/magnetfeld.pdf>] ("./content/tabellen/Tab Rot.tex") [12
+<./content/grafiken/rot 0.JPG>]
+<content/grafiken/blau 90.JPG, id=226, 803.0pt x 602.25pt>
 File: content/grafiken/blau 90.JPG Graphic file (type jpg)
 <use content/grafiken/blau 90.JPG>
-Package luatex.def Info: content/grafiken/blau 90.JPG  used on input line 211.
+Package luatex.def Info: content/grafiken/blau 90.JPG  used on input line 225.
 (luatex.def)             Requested size: 313.69167pt x 235.2717pt.
- ("./content/tabellen/Tab Blau.tex") [13]
-[14]
+ ("./content/tabellen/Tab Blau2.tex")
+[13] [14]
 File: content/grafiken/blau 90.JPG Graphic file (type jpg)
 <use content/grafiken/blau 90.JPG>
-Package luatex.def Info: content/grafiken/blau 90.JPG  used on input line 223.
+Package luatex.def Info: content/grafiken/blau 90.JPG  used on input line 239.
 (luatex.def)             Requested size: 313.69167pt x 235.2717pt.
- ("./content/tabellen/Tab Blau2.tex") [15<./content/grafiken/blau 90.JPG>]
-[16] (./content/tabellen/Plots.tex [17] [18]
-<content/grafiken/blau mit magnet 0 gimbplot.pdf, id=254, 433.62pt x 289.08pt>
+ ("./content/tabellen/Tab Blau.tex") [15<./content/grafiken/blau 90.JPG>] [16] 
+[17] (./content/tabellen/Plots.tex [18]
+<content/grafiken/blau mit magnet 0 gimbplot.pdf, id=264, 433.62pt x 289.08pt>
 File: content/grafiken/blau mit magnet 0 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/blau mit magnet 0 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/blau mit magnet 0 gimbplot.pdf  used o
@@ -1785,7 +1780,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 9--9
 [] [] 
  []
 
-<content/grafiken/blau mit magnet 90 gimbplot.pdf, id=255, 433.62pt x 289.08pt>
+<content/grafiken/blau mit magnet 90 gimbplot.pdf, id=265, 433.62pt x 289.08pt>
 File: content/grafiken/blau mit magnet 90 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/blau mit magnet 90 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/blau mit magnet 90 gimbplot.pdf  used 
@@ -1801,7 +1796,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 16--16
 [] [] 
  []
 
-<content/grafiken/blau ohne magnet 0 gimbplot.pdf, id=256, 433.62pt x 289.08pt>
+<content/grafiken/blau ohne magnet 0 gimbplot.pdf, id=266, 433.62pt x 289.08pt>
 File: content/grafiken/blau ohne magnet 0 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/blau ohne magnet 0 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/blau ohne magnet 0 gimbplot.pdf  used 
@@ -1817,7 +1812,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 23--23
 [] [] 
  []
 
-<content/grafiken/blau ohne magnet 90 gimbplot.pdf, id=257, 433.62pt x 289.08pt>
+<content/grafiken/blau ohne magnet 90 gimbplot.pdf, id=267, 433.62pt x 289.08pt>
 
 File: content/grafiken/blau ohne magnet 90 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/blau ohne magnet 90 gimbplot.pdf>
@@ -1834,7 +1829,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 30--30
 [] [] 
  []
 
-<content/grafiken/rot mit magnet 0 gimbplot.pdf, id=258, 433.62pt x 289.08pt>
+<content/grafiken/rot mit magnet 0 gimbplot.pdf, id=268, 433.62pt x 289.08pt>
 File: content/grafiken/rot mit magnet 0 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/rot mit magnet 0 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/rot mit magnet 0 gimbplot.pdf  used on
@@ -1850,7 +1845,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 37--37
 [] [] 
  []
 
-<content/grafiken/rot mit magnet 90 gimbplot.pdf, id=259, 433.62pt x 289.08pt>
+<content/grafiken/rot mit magnet 90 gimbplot.pdf, id=269, 433.62pt x 289.08pt>
 File: content/grafiken/rot mit magnet 90 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/rot mit magnet 90 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/rot mit magnet 90 gimbplot.pdf  used o
@@ -1866,7 +1861,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 44--44
 [] [] 
  []
 
-<content/grafiken/rot ohne magnet 0 gimbplot.pdf, id=260, 433.62pt x 289.08pt>
+<content/grafiken/rot ohne magnet 0 gimbplot.pdf, id=270, 433.62pt x 289.08pt>
 File: content/grafiken/rot ohne magnet 0 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/rot ohne magnet 0 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/rot ohne magnet 0 gimbplot.pdf  used o
@@ -1882,7 +1877,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 51--51
 [] [] 
  []
 
-<content/grafiken/rot ohne magnet 90 gimbplot.pdf, id=261, 433.62pt x 289.08pt>
+<content/grafiken/rot ohne magnet 90 gimbplot.pdf, id=271, 433.62pt x 289.08pt>
 File: content/grafiken/rot ohne magnet 90 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/rot ohne magnet 90 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/rot ohne magnet 90 gimbplot.pdf  used 
@@ -1917,10 +1912,10 @@ LaTeX Warning: Empty bibliography on input line 24.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 75C10224A83F797384676AADFA279E99;20053
-(rerunfilecheck)             After:  29E98E89C5271D82EE1C14714B539926;20248.
+(rerunfilecheck)             Before: BA9D1082DAA0A36C2A6B39A5187C8D4F;20132
+(rerunfilecheck)             After:  B489A90D109D0D118068418F6259B496;20327.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: F0BA1DC87CA4B6E3D53613E20E9A39CF;2152.
+(rerunfilecheck)             Checksum: 4823F4712E2657D706A4500C4025DFFE;2152.
 
 LaTeX Warning: There were undefined references.
 
@@ -1940,9 +1935,9 @@ Here is how much of LuaTeX's memory you used:
  903 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 88 attribute, 80 gl
 ue_spec, 46 attribute_list, 1 write nodes
-   avail lists: 1:4,2:2299,3:527,4:39,5:537,6:71,7:5949,8:79,9:613,10:22,11:603
+   avail lists: 1:4,2:2536,3:527,4:39,5:621,6:71,7:5949,8:79,9:613,10:22,11:603
  53926 multiletter control sequences out of 65536+600000
- 160 fonts using 41140879 bytes
+ 160 fonts using 41141123 bytes
  110i,15n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texl
 ive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texli
@@ -1952,10 +1947,10 @@ e/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive
 /texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texm
 f-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fo
 nts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (21 pages, 1049207 bytes).
+Output written on main.pdf (21 pages, 1051583 bytes).
 
-PDF statistics: 770 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
+PDF statistics: 780 PDF objects out of 1000 (max. 8388607)
+ 397 compressed objects within 4 object streams
  88 named destinations out of 1000 (max. 131072)
  185 words of extra memory for PDF output out of 10000 (max. 100000000)
 
