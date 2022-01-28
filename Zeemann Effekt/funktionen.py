@@ -9,6 +9,7 @@ from PIL import Image
 from scipy.signal import find_peaks
 import scipy.constants as const
 import matplotlib.pyplot as plt
+from uncertainties import ufloat
 import os
 
 def zuschneiden(dateipfad,speicherpfad):
@@ -118,19 +119,21 @@ def pixelzaehler2(dateipfad):
     return returnarray
     
 def wellenlaengenverschiebung(DELTAs,deltas,deltalam):
-    if len(DELTAs)==len(deltas):
+    #if len(DELTAs)==len(deltas):
         a=0
         returnarray1=[]
-        while a < len(DELTAs):
+        while a < len(deltas):
             returnarray1.append(round(((deltas[a]*deltalam)/2*DELTAs[a]),4))
             a=a+1
         
         mittelwert=round(sum(returnarray1)/len(returnarray1),2)
         mittelwertfehler=round(np.std(returnarray1, ddof=1) / np.sqrt(np.size(returnarray1)),2)
-    else:
-        print('Die Arrays haben nicht die selbe Länge!!!')
+        return returnarray1 , mittelwert , mittelwertfehler
+    #else:
+        #print('Die Arrays haben nicht die selbe Länge!!!')
     
-    return returnarray1 , mittelwert , mittelwertfehler
+    
+
 def landefaktoren(deltalamda,B,Lambda):
     mu=const.value('Bohr magneton')
     g=(deltalamda*const.h*const.c)/(mu*B*Lambda**2)
@@ -162,15 +165,15 @@ def tabellenkopf(speicherpfad,caption,label,dokuentenname):
     return (speicherpfad+dokuentenname+tex)
     
 def tabellenkoerper(datensatz1,datensatz2,datensatz3,speichern):
-    if len(datensatz1)==len(datensatz2) & len(datensatz1)==len(datensatz3):
+    #if len(datensatz1)==len(datensatz2) & len(datensatz1)==len(datensatz3):
         anfang='{$$' 
         mitte='$$}&{$$'
         ende='$$}\\'
         ende2='\\'
         datei2=open(speichern,'a')
         a=0
-        Nr=np.linspace(0,len(datensatz1),len(datensatz1))
-        while a < len(datensatz1):
+        Nr=np.linspace(0,len(datensatz2),len(datensatz2))
+        while a < len(datensatz2):
             datei2=open(speichern,'a')
             tuple1=anfang+str(int(round(Nr[a],0))) +mitte+str(datensatz1[a]) + mitte + str(datensatz2[a]) + mitte + str(datensatz3[a]) + ende +ende2
             datei2.write(str(tuple1)) 
@@ -178,8 +181,8 @@ def tabellenkoerper(datensatz1,datensatz2,datensatz3,speichern):
             datei2.close() # schließe die datei
             a=a+1
         
-    else:
-        print('Die Datensätze sind nicht gleich lang!!!')
+   # else:
+       # print('Die Datensätze sind nicht gleich lang!!!')
 
 def tabellenfuss(Mittelwert,Mittelwertfehler,speicherpfad):
     anfang='{$$' 

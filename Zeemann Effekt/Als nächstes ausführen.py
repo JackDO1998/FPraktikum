@@ -43,29 +43,37 @@ r='r-'
 #funktionen.plotten((speicherpfad+datei8),(speicherpfad+datei8),name8,r)
 
 DeltaSblau=funktionen.pixelzaehler1((speicherpfad+datei3))
+DeltaSblau2=funktionen.pixelzaehler1((speicherpfad+datei4))
 DeltaSrot=funktionen.pixelzaehler1((speicherpfad+datei7))
 
 deltaSblau=funktionen.pixelzaehler2((speicherpfad+datei1))
+deltaSblau2=funktionen.pixelzaehler2((speicherpfad+datei2))
 deltaSrot=funktionen.pixelzaehler2((speicherpfad+datei5))
 
 deltaLambdaDblau,mittelwertBlau, MWFblau=funktionen.wellenlaengenverschiebung(DeltaSblau, deltaSblau, 0.02695)
+deltaLambdaDblau2,mittelwertBlau2, MWFblau2=funktionen.wellenlaengenverschiebung(DeltaSblau2, deltaSblau2, 0.02695)
 deltaLambdaDrot,mittelwertRot, MWFrot=funktionen.wellenlaengenverschiebung(DeltaSrot, deltaSrot, 0.04891)
-caption1='Wellenlaengenverschiebung der blauen Linie.'
-caption2='Wellenlaengenverschiebung der roten Linie.'
+
+caption1='Wellenlaengenverschiebung der blauen Sigma-Linie.'
+caption3='Wellenlaengenverschiebung der blauen Pi-Linie.'
+caption2='Wellenlaengenverschiebung der roten Sigma-Linie.'
 a=funktionen.tabellenkopf(tabellenpfad,caption1,'tabelleBlau','Tab Blau')
-b=funktionen.tabellenkopf(tabellenpfad,caption2,'tabelleBlau','Tab Rot')
+c=funktionen.tabellenkopf(tabellenpfad,caption3,'tabelleBlau2','Tab Blau2')
+b=funktionen.tabellenkopf(tabellenpfad,caption2,'tabelleRot','Tab Rot')
 funktionen.tabellenkoerper(DeltaSblau,deltaSblau,deltaLambdaDblau,a)
+funktionen.tabellenkoerper(DeltaSblau2,deltaSblau2,deltaLambdaDblau2,c)
 funktionen.tabellenkoerper(DeltaSrot,deltaSrot,deltaLambdaDrot,b)
 funktionen.tabellenfuss(mittelwertBlau,MWFblau,a)
+funktionen.tabellenfuss(mittelwertBlau2,MWFblau2,c)
 funktionen.tabellenfuss(mittelwertRot,MWFrot,b)
 
 grot=funktionen.landefaktoren(mittelwertRot, 0.4521, 0.6488)
 gblau1=funktionen.landefaktoren(mittelwertBlau, 0.347, 0.48)
-gblau2=funktionen.landefaktoren(mittelwertBlau, 0.4521, 0.48)
+gblau2=funktionen.landefaktoren(mittelwertBlau2, 0.4521, 0.48)
 
-print('Rot:',grot)
-print('Blau 1:',gblau1)
-print('Blau 2:',gblau2)
+print('Lande Faktor Rot:',grot)
+print('Lande Faktor Blau 1:',gblau1)
+print('Lande Faktor Blau 2:',gblau2)
 
 
 
