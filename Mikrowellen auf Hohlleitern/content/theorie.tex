@@ -27,11 +27,11 @@ mit scheinbar ortsfesten Knoten und Bäuchen. Eine solche Welle lässt sich math
 einer links- und einer rechtslaufenden Welle schreiben:
 \begin{equation}
     \label{eq:stehendewelle}
-    A(x,t)=A_0sin(xk+\omega t +\phi_0)+B_0sin(xk-\omega t +\phi_0)
+    A(x,t)=A_0\sin(xk+\omega t +\phi_0)+B_0\sin(xk-\omega t +\phi_0)
 \end{equation}
 Dieser Ausdruck lässt sich für $A_0=B_0$ vereinfachen zu:
 \begin{equation}
-    A(x,t)=A_0sin(kx)cos(\omega t)
+    A(x,t)=A_0\sin(kx)\cos(\omega t)
 \end{equation}
 
 \subsubsection{Stehwellenverhältnis}
@@ -46,20 +46,20 @@ An dieser stehenden Welle kann das sogenannte Stehwellenverhältnis gemessen wer
 Verhältnis zwischen der Feldstärke an einem Maximum un der an einem Minimum.
 \begin{equation}
     \label{eq:stehwellenverhaeltnis}
-    S=\frac{E_{max}}{E_{min}}
+    S=\frac{E_{\mathrm{max}}}{E_{\mathrm{min}}}
 \end{equation}
 Für die perfekte Totalreflexion läuft S gegen unendlich.
 Das Stehwellenverhältnis wird in diesem Versuch auf zwei Weisen ermittelt, zunächst mit der
 später noch genauer erläuterten 3dB-Methode, hier ergibt es sich über:
 \begin{equation}
     \label{eq:dreidB}
-    S=\sqrt{1+\frac{1}{sin^2(\frac{\pi (x_{links}-x_{rechts})}{\lambda_H})}}
+    S=\sqrt{1+\frac{1}{\sin^2(\frac{\pi (x_{\mathrm{links}}-x_{\mathrm{rechts}})}{\lambda_H})}}
 \end{equation}
 Das kann unter der Annahme, dass das Argument im Sinus ausreichend klein ist mit der Kleinwinkelnäherung zu folgender
 Formel vereinfacht werden:
 \begin{equation}
     \label{eq:3dBleicht}
-    S=\frac{\lambda_H}{(x_{links}-x_{rechts})}
+    S=\frac{\lambda_H}{(x_{\mathrm{links}}-x_{\mathrm{rechts}})}
 \end{equation}
 Im Weiteren wird das Stehwellenverhältnis noch mit der ebenfalls später genauer erläuteten Abschwächer 
 Methode ermittelt. Hier ergibt es sich über den Zusammenhang:
@@ -109,7 +109,8 @@ beliebig. In der Praxis werden jedoch aufgrund der vergleichsweise einfachen Ber
 runde oder allenfalls ovale Querschnitte gewählt. In diesem Versuch werden Hohlleiter mit einem rechteckigen
 Querschnitt verwendet. Jeder Hohlleiter hat eine sogenannte Cutoff Wellenlänge $\lambda_c$ das ist die maximale
 Wellenlänge also minimale Frequenz welche die eingekoppelte Welle haben darf, um noch übertragen zu werden.
-Sie ist bei der rechteckigen Variante abhängig von der Breite $a$ des Hohlleiters, $\lambda_c=2a$ an diesem Punkt
+Sie ist bei der rechteckigen Variante abhängig von der Breite $a$ des Hohlleiters und ergibt sich für die 
+$\mathrm{TE}_{01}$-Mode über  $\lambda_c=2a$. An diesem Punkt
 passt genau noch eine Halbwelle zwischen die Seitenwände des Hohlleiters. Im Hohlleiter können sich zwei verschiedene
 Grundmoden ausbreiten, einerseits die "transversal elektrische" TE-Mode, bei der das elektrische Feld eine Komponente
 in Ausbreitungsrichtung aufweist und andererseits die "transversal magnetische" TM-Mode, bei welcher das Magnetfeld
@@ -126,3 +127,33 @@ und durch Imperfektionen der Oberflächen, an welchen die Wellen gestreut werden
     \label{fig:Hohlleiter}
   \end{figure}
 
+\subsubsection{Wellen in Hohlleitern}
+EM-Wellen änderen einige ihrer Eigenschaften wenn sie in einen Rechteckhohlleiter geraten. Während sich eine 
+EM-Welle im freien Raum die Wellenlänge:
+\begin{equation}
+    \lambda_0=\frac{c}{f}\\
+\end{equation}
+aufweist, ist es im Rachteckhohlleiter komplizierter. Betreachtet wird eine Welle, die im Winkel $\theta$ auf 
+eine Hohlleiterwand trifft und von dort mehrfach reflektiert wird. Sie kann als Superposition zweier ebener 
+Wellen gleicher Wellenlänge und Polarisation betrachtet werden. Nach einigen geometrischen Überlegungen
+folgen die Zusammenhänge:
+\begin{equation}
+    \frac{\lambda_0}{2a}=\sin(\theta)\\
+\end{equation}
+und
+\begin{equation}
+    \lambda_g=\frac{\lambda_0}{\cos(\theta)}.\\
+\end{equation}
+Diese können unter benutzung eines Additionstheorems ineineander eingetzt werden. Dann folgt für die Hohlleiterwellenlänge:
+\begin{equation}
+    \lambda_g=\frac{\lambda_0}{\sqrt{1-(\frac{\lambda_0}{2a})^2}}.\\
+\end{equation}
+Dabei ist $a$ die breite des Hohlleiters. Die weiteren Größen Frequenz $f$ und Phasengeschwindigkeit $\upsilon_g$ 
+ergeben sich dann zu:
+\begin{equation}
+    f=c\sqrt{(\frac{1}{\lambda_g})^2+(\frac{1}{2a})^2}\\
+\end{equation}
+und 
+\begin{equation}
+    \upsilon_g=c\sqrt{1-(\frac{\lambda_0}{2a})^2}.\\
+\end{equation}
