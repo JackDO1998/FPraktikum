@@ -93,7 +93,7 @@ def plotten(dateipfad,speicherpfad,titel,farbe):
     plt.xlabel('Pixel Nr.')
     plt.ylabel('Helligkeit')
     plt.savefig(speicherpfad+Plot)
-    plt.show()
+    #plt.show()
     
 def pixelzaehler1(dateipfad):
     a=0
@@ -128,7 +128,8 @@ def wellenlaengenverschiebung(DELTAs,deltas,deltalam):
         
         mittelwert=round(sum(returnarray1)/len(returnarray1),2)
         mittelwertfehler=round(np.std(returnarray1, ddof=1) / np.sqrt(np.size(returnarray1)),2)
-        return returnarray1 , mittelwert , mittelwertfehler
+        Mittelwert=ufloat(mittelwert,mittelwertfehler)
+        return returnarray1 , Mittelwert 
     #else:
         #print('Die Arrays haben nicht die selbe Länge!!!')
     
@@ -184,14 +185,16 @@ def tabellenkoerper(datensatz1,datensatz2,datensatz3,speichern):
    # else:
        # print('Die Datensätze sind nicht gleich lang!!!')
 
-def tabellenfuss(Mittelwert,Mittelwertfehler,speicherpfad):
+def tabellenfuss(Mittelwert,speicherpfad):
+    mittelwert=Mittelwert.n
+    mittelwertfehler=Mittelwert.s
     anfang='{$$' 
     mitte='$$}&{$$'
     ende='$$}\\'
     ende2='\\'
     durchschnitt='\diameter'
     pm='\pm'
-    tuple1=anfang+ durchschnitt +mitte+mitte + mitte + str(Mittelwert) + pm +str(Mittelwertfehler)+ ende +ende2
+    tuple1=anfang+ durchschnitt +mitte+mitte + mitte + str(mittelwert) + pm +str(mittelwertfehler)+ ende +ende2
     datei2=open(speicherpfad,'a')
     datei2.write("\\midrule") 
     datei2.write("\n")#springe in die nächste zeile
@@ -203,3 +206,7 @@ def tabellenfuss(Mittelwert,Mittelwertfehler,speicherpfad):
     datei2.write("\n")#springe in die nächste zeile
     datei2.write("\\end{table}") 
     datei2.write("\n")#springe in die nächste zeile
+    
+def prozentualeAbweichung(Theoriewert,Experimentalwert):
+    a=((Experimentalwert-Theoriewert)/Theoriewert)*100
+    print('Abweichung=',a,'%')
