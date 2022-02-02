@@ -16,8 +16,8 @@
 \contentsline {section}{\numberline {4}Durchführung}{8}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Aufbau}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Justierung der Messapparatur}{8}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Versuchsdurchführung}{11}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Auswertung}{11}{section.5}%
-\contentsline {section}{\numberline {6}Diskussion}{11}{section.6}%
-\contentsline {section}{\numberline {7}Literatur}{11}{section.7}%
+\contentsline {subsection}{\numberline {4.3}Versuchsdurchführung}{10}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Auswertung}{10}{section.5}%
+\contentsline {section}{\numberline {6}Diskussion}{10}{section.6}%
+\contentsline {section}{\numberline {7}Literatur}{10}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
