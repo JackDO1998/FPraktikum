@@ -6,18 +6,18 @@
 \contentsline {subsection}{\numberline {2.2}Die effektive Masse}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Dotierung}{4}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}n-Dotierung}{4}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}p-Dotierung}{4}{subsubsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.4}Doppelbrechung}{4}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Das Glan-Thompson-Prisma}{5}{subsubsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.5}Die zirkulare Doppelbrechung}{5}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Der Faradayeffekt}{5}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}Berechnung des Rotationswinkels der Polarisationebene}{6}{subsubsection.2.6.1}%
-\contentsline {section}{\numberline {3}Fehler}{7}{section.3}%
-\contentsline {section}{\numberline {4}Durchführung}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Aufbau}{8}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Justierung der Messapparatur}{8}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Versuchsdurchführung}{10}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Auswertung}{10}{section.5}%
-\contentsline {section}{\numberline {6}Diskussion}{10}{section.6}%
-\contentsline {section}{\numberline {7}Literatur}{10}{section.7}%
+\contentsline {subsubsection}{\numberline {2.3.2}p-Dotierung}{5}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Doppelbrechung}{5}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Das Glan-Thompson-Prisma}{6}{subsubsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.5}Die zirkulare Doppelbrechung}{6}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Der Faradayeffekt}{7}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Berechnung des Rotationswinkels der Polarisationebene}{7}{subsubsection.2.6.1}%
+\contentsline {section}{\numberline {3}Fehler}{8}{section.3}%
+\contentsline {section}{\numberline {4}Durchführung}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Aufbau}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Justierung der Messapparatur}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Versuchsdurchführung}{11}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Auswertung}{11}{section.5}%
+\contentsline {section}{\numberline {6}Diskussion}{11}{section.6}%
+\contentsline {section}{\numberline {7}Literatur}{11}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
