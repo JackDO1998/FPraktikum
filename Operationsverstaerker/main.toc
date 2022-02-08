@@ -1,0 +1,20 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Operationsverstärker}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Invertierender Linearverstärker}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Umkehrintegrator und Invertierender Differenzierer}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Nicht-invertierender Schmitt-Trigger}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Fehler}{7}{section.3}%
+\contentsline {section}{\numberline {4}Durchführung}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Der invertierende Linearverstärker}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Der Umkehrintegrator und der invertierender Differenzierer}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Der Schmitt-Trigger}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Der Signalgenerator}{8}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Auswertung}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Der Invertierende-Linearverstärker}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Der Umkehrintegrator und der invertierender Differenzierer}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Nicht-invertierender-Schmitt-Trigger}{15}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Diskussion}{17}{section.6}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

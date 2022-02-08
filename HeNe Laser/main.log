@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  16 NOV 2021 22:50
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  8 FEB 2022 02:54
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1062,7 +1062,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box65
 )
-Package scrhack Info: loading float hack on input line 78.
+Package scrhack Info: loading float hack on input line 81.
 
 (c:/texlive/2020/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2020/09/21 v3.32 KOMA-Script scrhack part (hacking package float
@@ -1399,7 +1399,7 @@ File: biblatex.cfg
 ))
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 125.
+(scrhack)             need that hack, on input line 128.
 
 (c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
@@ -1699,8 +1699,8 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 23.
  [8] [9]
-[10] [11]
-<figures/TEM_00.png, id=155, 433.62pt x 433.62pt>
+[10]
+<figures/TEM_00.png, id=150, 433.62pt x 433.62pt>
 File: figures/TEM_00.png Graphic file (type png)
 <use figures/TEM_00.png>
 Package luatex.def Info: figures/TEM_00.png  used on input line 195.
@@ -1710,7 +1710,7 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 195--196
 [][] 
  []
 
-<figures/TEM_10.png, id=156, 433.62pt x 433.62pt>
+<figures/TEM_10.png, id=151, 433.62pt x 433.62pt>
 File: figures/TEM_10.png Graphic file (type png)
 <use figures/TEM_10.png>
 Package luatex.def Info: figures/TEM_10.png  used on input line 202.
@@ -1720,10 +1720,10 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 202--203
 [][] 
  []
 
-[12
+[11
 
-] [13<./figures/TEM_00.png>] [14<./figures/TEM_10.png>]
-<figures/Polarisation.png, id=186, 433.62pt x 433.62pt>
+] [12<./figures/TEM_00.png>] [13<./figures/TEM_10.png>]
+<figures/Polarisation.png, id=182, 433.62pt x 433.62pt>
 File: figures/Polarisation.png Graphic file (type png)
 <use figures/Polarisation.png>
 Package luatex.def Info: figures/Polarisation.png  used on input line 278.
@@ -1733,10 +1733,10 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 278--279
 [][] 
  []
 
-[15
+[14
 
-] [16<./figures/Polarisation.png>]
-<figures/Frequenzabstand.png, id=206, 433.62pt x 433.62pt>
+] [15<./figures/Polarisation.png>]
+<figures/Frequenzabstand.png, id=202, 433.62pt x 433.62pt>
 File: figures/Frequenzabstand.png Graphic file (type png)
 <use figures/Frequenzabstand.png>
 Package luatex.def Info: figures/Frequenzabstand.png  used on input line 349.
@@ -1746,10 +1746,10 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 349--350
 [][] 
  []
 
-[17
+[16
 
 ]
-<figures/Multimoden.png, id=220, 433.62pt x 433.62pt>
+<figures/Multimoden.png, id=216, 433.62pt x 433.62pt>
 File: figures/Multimoden.png Graphic file (type png)
 <use figures/Multimoden.png>
 Package luatex.def Info: figures/Multimoden.png  used on input line 408.
@@ -1759,7 +1759,7 @@ Overfull \hbox (15.36339pt too wide) in paragraph at lines 408--409
 [][] 
  []
 
-[18] [19<./figures/Frequenzabstand.png>] [20<./figures/Multimoden.png>]
+[17] [18<./figures/Frequenzabstand.png>] [19<./figures/Multimoden.png>]
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 9.00096pt on input line 456.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
@@ -1769,7 +1769,7 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 456.
 
-[21
+[20
 
 ]) (./content/diskussion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 21--33
@@ -1781,26 +1781,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--33
 
  []
 
-[22
+[21
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 49--52
 
  []
 
-[23])
+)
 
 LaTeX Warning: Empty bibliography on input line 24.
 
-[24] (./main.aux)
+[22] (./main.aux)
 
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 1D502647AA59827C01AFF65CAABEA9A5;19951
-(rerunfilecheck)             After:  2E457EEB87A1AED6E75C18016754FA3E;20146.
+(rerunfilecheck)             Before: 240F5986FC8A49A822F1D45AC45E96A8;19949
+(rerunfilecheck)             After:  1CC70640265F572E4910661E4CDC8097;20144.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 5E134E334999C77DC43B03E682E9D540;2347.
+(rerunfilecheck)             Checksum: 2DC58B8B3889E063D4D3D5270CC5F9AC;2347.
 
 LaTeX Warning: There were undefined references.
 
@@ -1818,14 +1818,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35636 strings out of 478903
+ 35634 strings out of 478903
  100000,1977958 words of node,token memory allocated
  1284 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 dir, 8 glue, 4 kern, 1 glyph, 206 attribute, 80 g
 lue_spec, 105 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:4,2:1429,3:375,4:46,5:502,6:79,7:7460,8:73,9:661,10:24,11:890
+   avail lists: 1:4,2:1429,3:375,4:47,5:584,6:79,7:8057,8:75,9:661,10:24,11:931
  53938 multiletter control sequences out of 65536+600000
- 182 fonts using 47225835 bytes
+ 182 fonts using 47224983 bytes
  110i,9n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/te
 xlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf><c:/texlive/
@@ -1838,10 +1838,10 @@ onts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/
 opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opent
 ype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/publi
 c/lm/lmroman12-bold.otf>
-Output written on main.pdf (24 pages, 221549 bytes).
+Output written on main.pdf (22 pages, 220782 bytes).
 
-PDF statistics: 454 PDF objects out of 1000 (max. 8388607)
- 381 compressed objects within 4 object streams
- 114 named destinations out of 1000 (max. 131072)
+PDF statistics: 446 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 112 named destinations out of 1000 (max. 131072)
  209 words of extra memory for PDF output out of 10000 (max. 100000000)
 
