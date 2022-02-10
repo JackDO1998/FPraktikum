@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  10 FEB 2022 19:22
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  10 FEB 2022 20:07
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1718,19 +1718,27 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 72.
 [4] [5]
 ! Misplaced alignment tab character &.
-l.119 ^1P_1 \leftrightarrow \,^1D_2 &
+l.120 ^1P_1 \leftrightarrow \,^1D_2 &
                                     & \text{$\lambda = 643,8$\,nm}
 ? 
 ! Misplaced alignment tab character &.
-l.119 ^1P_1 \leftrightarrow \,^1D_2 & &
+l.120 ^1P_1 \leftrightarrow \,^1D_2 & &
                                       \text{$\lambda = 643,8$\,nm}
 ? 
 ! Misplaced alignment tab character &.
-l.120 ^3S_1 \leftrightarrow \,^3P_1 &
+l.124 ^1P_1 \leftrightarrow \,^1D_2 &
+                                    & \text{$\lambda = 643,8$\,nm}\\
+? 
+! Misplaced alignment tab character &.
+l.124 ^1P_1 \leftrightarrow \,^1D_2 & &
+                                      \text{$\lambda = 643,8$\,nm}\\
+? 
+! Misplaced alignment tab character &.
+l.127 ^3S_1 \leftrightarrow \,^3P_1 &
                                     & \text{$\lambda = 480,0$\,nm}
 ? 
 ! Misplaced alignment tab character &.
-l.120 ^3S_1 \leftrightarrow \,^3P_1 & &
+l.127 ^3S_1 \leftrightarrow \,^3P_1 & &
                                       \text{$\lambda = 480,0$\,nm}
 ? 
 [6
@@ -1740,11 +1748,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<content/grafiken/Aufbau.jpg, id=114, 687.31781pt x 275.52937pt>
+[7]
+<content/grafiken/Aufbau.jpg, id=124, 687.31781pt x 275.52937pt>
 File: content/grafiken/Aufbau.jpg Graphic file (type jpg)
 <use content/grafiken/Aufbau.jpg>
 Package luatex.def Info: content/grafiken/Aufbau.jpg  used on input line 14.
 (luatex.def)             Requested size: 418.25555pt x 167.66905pt.
+
 ! Argument of \caption@ydblarg has an extra }.
 <inserted text> 
 \par 
@@ -1765,7 +1775,7 @@ l.15 \caption{Versuchsaufbau\footnote}
 l.15 \caption{Versuchsaufbau\footnote}
                                     
 ? 
-[7]) (./content/auswertung.tex [8<./content/grafiken/Aufbau.jpg>] [9] [10
+) (./content/auswertung.tex [8<./content/grafiken/Aufbau.jpg>] [9] [10
 Missing character: There is no 𝛥 (U+1D6E5) in font [lmroman10-regular]:+tlig;
 !
 Missing character: There is no 𝛥 (U+1D6E5) in font [lmroman10-regular]:+tlig;
@@ -1780,21 +1790,21 @@ Missing character: There is no 𝛥 (U+1D6E5) in font [lmroman10-regular]:+tlig;
 !
 ]
 [11]
-<content/grafiken/magnetfeld.pdf, id=173, 433.62pt x 289.08pt>
+<content/grafiken/magnetfeld.pdf, id=172, 433.62pt x 289.08pt>
 File: content/grafiken/magnetfeld.pdf Graphic file (type pdf)
 <use content/grafiken/magnetfeld.pdf>
 Package luatex.def Info: content/grafiken/magnetfeld.pdf  used on input line 178
 .
 (luatex.def)             Requested size: 418.25555pt x 278.85017pt.
  [12] [13<./content/grafiken/magnetfeld.pdf>]
-<content/grafiken/rot 0.JPG, id=237, 803.0pt x 602.25pt>
+<content/grafiken/rot 0.JPG, id=236, 803.0pt x 602.25pt>
 File: content/grafiken/rot 0.JPG Graphic file (type jpg)
 <use content/grafiken/rot 0.JPG>
 Package luatex.def Info: content/grafiken/rot 0.JPG  used on input line 199.
 (luatex.def)             Requested size: 313.69167pt x 235.2717pt.
 
 ("./content/tabellen/Tab Rot.tex") [14<./content/grafiken/rot 0.JPG>]
-<content/grafiken/blau 90.JPG, id=252, 101.178pt x 75.8835pt>
+<content/grafiken/blau 90.JPG, id=251, 101.178pt x 75.8835pt>
 File: content/grafiken/blau 90.JPG Graphic file (type jpg)
 <use content/grafiken/blau 90.JPG>
 Package luatex.def Info: content/grafiken/blau 90.JPG  used on input line 227.
@@ -1808,7 +1818,7 @@ Package luatex.def Info: content/grafiken/blau 90.JPG  used on input line 241.
  ("./content/tabellen/Tab Blau.tex")
 [16<./content/grafiken/blau 90.JPG>] [17] (./content/tabellen/Plots.tex
 [18]
-<content/grafiken/blau mit magnet 0 gimbplot.pdf, id=283, 462.528pt x 346.896pt>
+<content/grafiken/blau mit magnet 0 gimbplot.pdf, id=282, 462.528pt x 346.896pt>
 
 File: content/grafiken/blau mit magnet 0 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/blau mit magnet 0 gimbplot.pdf>
@@ -1825,7 +1835,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 9--9
 [] [] 
  []
 
-<content/grafiken/blau mit magnet 90 gimbplot.pdf, id=284, 462.528pt x 346.896pt
+<content/grafiken/blau mit magnet 90 gimbplot.pdf, id=283, 462.528pt x 346.896pt
 >
 File: content/grafiken/blau mit magnet 90 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/blau mit magnet 90 gimbplot.pdf>
@@ -1842,7 +1852,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 16--16
 [] [] 
  []
 
-<content/grafiken/blau ohne magnet 0 gimbplot.pdf, id=285, 462.528pt x 346.896pt
+<content/grafiken/blau ohne magnet 0 gimbplot.pdf, id=284, 462.528pt x 346.896pt
 >
 File: content/grafiken/blau ohne magnet 0 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/blau ohne magnet 0 gimbplot.pdf>
@@ -1859,7 +1869,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 23--23
 [] [] 
  []
 
-<content/grafiken/blau ohne magnet 90 gimbplot.pdf, id=286, 462.528pt x 346.896p
+<content/grafiken/blau ohne magnet 90 gimbplot.pdf, id=285, 462.528pt x 346.896p
 t>
 File: content/grafiken/blau ohne magnet 90 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/blau ohne magnet 90 gimbplot.pdf>
@@ -1876,7 +1886,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 30--30
 [] [] 
  []
 
-<content/grafiken/rot mit magnet 0 gimbplot.pdf, id=287, 433.62pt x 289.08pt>
+<content/grafiken/rot mit magnet 0 gimbplot.pdf, id=286, 433.62pt x 289.08pt>
 File: content/grafiken/rot mit magnet 0 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/rot mit magnet 0 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/rot mit magnet 0 gimbplot.pdf  used on
@@ -1892,7 +1902,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 37--37
 [] [] 
  []
 
-<content/grafiken/rot mit magnet 90 gimbplot.pdf, id=288, 433.62pt x 289.08pt>
+<content/grafiken/rot mit magnet 90 gimbplot.pdf, id=287, 433.62pt x 289.08pt>
 File: content/grafiken/rot mit magnet 90 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/rot mit magnet 90 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/rot mit magnet 90 gimbplot.pdf  used o
@@ -1908,7 +1918,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 44--44
 [] [] 
  []
 
-<content/grafiken/rot ohne magnet 0 gimbplot.pdf, id=289, 433.62pt x 289.08pt>
+<content/grafiken/rot ohne magnet 0 gimbplot.pdf, id=288, 433.62pt x 289.08pt>
 File: content/grafiken/rot ohne magnet 0 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/rot ohne magnet 0 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/rot ohne magnet 0 gimbplot.pdf  used o
@@ -1924,7 +1934,7 @@ Overfull \hbox (86.14984pt too wide) in paragraph at lines 51--51
 [] [] 
  []
 
-<content/grafiken/rot ohne magnet 90 gimbplot.pdf, id=290, 433.62pt x 289.08pt>
+<content/grafiken/rot ohne magnet 90 gimbplot.pdf, id=289, 433.62pt x 289.08pt>
 File: content/grafiken/rot ohne magnet 90 gimbplot.pdf Graphic file (type pdf)
 <use content/grafiken/rot ohne magnet 90 gimbplot.pdf>
 Package luatex.def Info: content/grafiken/rot ohne magnet 90 gimbplot.pdf  used 
@@ -1959,10 +1969,10 @@ LaTeX Warning: Empty bibliography on input line 26.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: D016F1BF499D7BAAA4D03C06181DFB05;20000
-(rerunfilecheck)             After:  929D7EBE27B517E87688B0600ADEEE18;20195.
+(rerunfilecheck)             Before: 0E4D2A63018C14283EDCF7070C942446;20002
+(rerunfilecheck)             After:  EE11091646BE0F6D291823E05E146935;20197.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: E476F84CA2A2EBE8BDC46C5C863DA928;2086.
+(rerunfilecheck)             Checksum: 74682DD11968EC2F6EA077974CDCBA14;2086.
 
 LaTeX Warning: There were undefined references.
 
@@ -1977,14 +1987,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35869 strings out of 478903
+ 35868 strings out of 478903
  100000,1977958 words of node,token memory allocated
- 1035 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 11 glue, 4 kern, 1 glyph, 118 attribute, 80 
-glue_spec, 61 attribute_list, 1 write nodes
-   avail lists: 1:4,2:1629,3:453,4:38,5:557,6:68,7:6496,8:80,9:590,10:17,11:670
+ 1041 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 11 glue, 4 kern, 1 glyph, 120 attribute, 80 
+glue_spec, 62 attribute_list, 1 write nodes
+   avail lists: 1:4,2:1959,3:453,4:35,5:614,6:68,7:6234,8:81,9:681,10:17,11:639
  54107 multiletter control sequences out of 65536+600000
- 248 fonts using 65477391 bytes
+ 248 fonts using 65476987 bytes
  110i,15n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
 <c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/te
 xlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/20
@@ -1998,10 +2008,10 @@ pentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/fonts/openty
 pe/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fonts/opentype/pu
 blic/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/l
 mroman12-bold.otf>
-Output written on main.pdf (21 pages, 523308 bytes).
+Output written on main.pdf (21 pages, 523514 bytes).
 
-PDF statistics: 816 PDF objects out of 1000 (max. 8388607)
- 423 compressed objects within 5 object streams
- 94 named destinations out of 1000 (max. 131072)
+PDF statistics: 815 PDF objects out of 1000 (max. 8388607)
+ 422 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 131072)
  177 words of extra memory for PDF output out of 10000 (max. 100000000)
 
