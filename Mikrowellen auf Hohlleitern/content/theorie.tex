@@ -90,8 +90,22 @@ erzeugt wird. Optimale Verstärkungen werden erzeugt, wenn die ein und augekoppe
 Die Phasenverschiebung lässt sich über die Länge der Driftstrecke steuern. Die Länge der Driftstrecke kann 
 sowohl durch mechanische Verschiebung der reflektierenden Kathode als auch durch ihre Spannung gegenüber 
 der Anode verändert und eingestellt werden. Die optimalen Verstärkungen liegen bei Transitzeiten von
-$\tau=T_0(n+\frac{3}{4})$ mit $n \in \mathbb{N}$ und $T_0$ der Periodendauer der eingekoppelten Schwingung.
-
+$\tau=T_0(n+\frac{3}{4})$ mit $n \in \mathbb{N}$ und $T_0=\frac{1}{s}$ der Periodendauer der eingekoppelten Schwingung.
+Mit der kinetischen Energie der Elektronen:
+\begin{equation}
+    \frac{1}{2}mv_0^2=eU_B
+\end{equation}
+und $\Delta v_0=0$ folgt insgesamt für das Verhältnis zwischen $U_B$ und $U_C$
+\begin{equation}
+    \sqrt{8U_B\frac{m}{e}}\frac{Lf}{U_B+U_C}=n+\frac{3}{4}
+\end{equation}
+Aus der Differenz dieses Ausdrucks für zwei benachbarte Moden $n$ und $n+1$ +  folgt ein
+Zusammenhang zur Berechnung des Abstandes $L$ zwischen Resonator und Reflektor, der
+nicht mehr von der Modenzahl abhängt. Er lautet
+\begin{equation}
+    \label{eq:resonatorlange}
+    L=\left( \sqrt{8U_B\frac{m}{e}}  \left(\frac{Lf_{n+1}}{U_B+U_{C,n+1}}-\frac{Lf_n}{U_B+U_{C,n}}\right)\right)^{-1}
+\end{equation}
 \begin{figure}
     \centering
     \includegraphics[width=0.3\textwidth,angle=0]{content/grafiken/Klystron.PNG}

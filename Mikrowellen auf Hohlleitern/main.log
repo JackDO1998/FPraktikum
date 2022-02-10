@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  31 JAN 2022 14:52
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.12.14)  10 FEB 2022 21:20
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1500,9 +1500,10 @@ Package: extdash 2018/06/24 v1.3 Extended Dash Package (NCC)
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./main.aux)
-\openout1 = main.aux
 
+No file main.aux.
+
+\openout1 = main.aux
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
@@ -1538,7 +1539,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 13.
-
 (c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
@@ -1682,29 +1682,46 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 {c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 17.
 
- (./main.toc)
 \tf@toc=\write4
 
 \openout4 = main.toc
  [2
 
-]
-(./content/ziel.tex) (./content/theorie.tex [3] [4]
-<content/grafiken/Klystron.PNG, id=92, 243.91125pt x 335.75438pt>
+] (./content/ziel.tex)
+(./content/theorie.tex
+
+LaTeX Warning: Reference `eq:stehendewelle' on page 3 undefined on input line 41
+.
+
+[3] [4]
+<content/grafiken/Klystron.PNG, id=49, 243.91125pt x 335.75438pt>
 File: content/grafiken/Klystron.PNG Graphic file (type png)
 <use content/grafiken/Klystron.PNG>
-Package luatex.def Info: content/grafiken/Klystron.PNG  used on input line 97.
+Package luatex.def Info: content/grafiken/Klystron.PNG  used on input line 111.
 (luatex.def)             Requested size: 125.47794pt x 172.72844pt.
  [5<./content/grafiken/Klystron.PNG>]
-<content/grafiken/Hohlleiter.PNG, id=100, 256.70906pt x 161.10187pt>
+<content/grafiken/Hohlleiter.PNG, id=60, 256.70906pt x 161.10187pt>
 File: content/grafiken/Hohlleiter.PNG Graphic file (type png)
 <use content/grafiken/Hohlleiter.PNG>
-Package luatex.def Info: content/grafiken/Hohlleiter.PNG  used on input line 124
+Package luatex.def Info: content/grafiken/Hohlleiter.PNG  used on input line 138
 .
 (luatex.def)             Requested size: 125.47794pt x 78.7464pt.
-) (./content/fehler.tex [6<./content/grafiken/Hohlleiter.PNG>])
-(./content/durchfuehrung.tex [7] [8]) (./content/auswertung.tex [9]
-<figures/Schwingungsmoden.pdf, id=133, 462.528pt x 346.896pt>
+ [6<./content/grafiken/Hohlleiter.PNG>]) (./content/fehler.tex) (./content/durc
+hfuehrung.tex [7] [8])
+(./content/auswertung.tex [9]
+
+LaTeX Warning: Reference `tab:schwingmod' on page 10 undefined on input line 17.
+
+
+
+LaTeX Warning: Reference `tab:schwingmod2' on page 10 undefined on input line 53
+.
+
+
+LaTeX Warning: Reference `fig:schwingmod' on page 10 undefined on input line 72.
+
+
+<figures/Schwingungsmoden.pdf, id=99, 462.528pt x 346.896pt>
 File: figures/Schwingungsmoden.pdf Graphic file (type pdf)
 <use figures/Schwingungsmoden.pdf>
 Package luatex.def Info: figures/Schwingungsmoden.pdf  used on input line 75.
@@ -1714,12 +1731,30 @@ Overfull \hbox (44.2713pt too wide) in paragraph at lines 75--76
 [][] 
  []
 
+
+LaTeX Warning: Reference `tab:bandbreite' on page 10 undefined on input line 81.
+
+
 [10] [11<./figures/Schwingungsmoden.pdf>]
+
+LaTeX Warning: Reference `tab:minima' on page 12 undefined on input line 125.
+
+
+LaTeX Warning: Reference `tab:minima' on page 12 undefined on input line 141.
+
+[12]
+
+LaTeX Warning: Reference `tab:daempf' on page 13 undefined on input line 164.
+
+
 Overfull \hbox (26.38753pt too wide) in paragraph at lines 170--184
  [][] 
  []
 
-<figures/Dämpfungsglied.pdf, id=219, 462.528pt x 346.896pt>
+
+LaTeX Warning: Reference `fig:daempf' on page 13 undefined on input line 193.
+
+<figures/Dämpfungsglied.pdf, id=189, 462.528pt x 346.896pt>
 File: figures/Dämpfungsglied.pdf Graphic file (type pdf)
 <use figures/Dämpfungsglied.pdf>
 Package luatex.def Info: figures/Dämpfungsglied.pdf  used on input line 198.
@@ -1729,31 +1764,70 @@ Overfull \hbox (44.2713pt too wide) in paragraph at lines 198--199
 [][] 
  []
 
-[12] [13<./figures/Dämpfungsglied.pdf>]
+
+LaTeX Warning: Reference `tab:swr' on page 13 undefined on input line 217.
+
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.00053pt on input line 222.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 222.
- [14]) (./content/diskussion.tex
+
+LaTeX Warning: Reference `tab:3db' on page 13 undefined on input line 237.
+
+
+LaTeX Warning: Reference `sec:fwd' on page 13 undefined on input line 237.
+
+[13] [14<./figures/Dämpfungsglied.pdf>]
+
+LaTeX Warning: Reference `tab:abschw' on page 15 undefined on input line 269.
+
+
+LaTeX Warning: Reference `eq:abschw' on page 15 undefined on input line 285.
+
+) (./content/diskussion.tex
+
+LaTeX Warning: Reference `sec:auswertung' on page 15 undefined on input line 6.
+
+
+LaTeX Warning: Reference `sec:schwingungsmoden' on page 15 undefined on input li
+ne 10.
+
+
+LaTeX Warning: Reference `fig:schwingmod' on page 15 undefined on input line 10.
+
+
+[15]
+
+LaTeX Warning: Reference `fig:schwingmod' on page 16 undefined on input line 23.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 21--25
 
  []
 
-[15])
+
+LaTeX Warning: Reference `sec:fwd' on page 16 undefined on input line 26.
+
+
+LaTeX Warning: Reference `fig:daempf' on page 16 undefined on input line 31.
+
+[16])
 
 LaTeX Warning: Empty bibliography on input line 26.
 
-[16] (./main.aux)
+[17] (./main.aux)
 
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 282ECE023B9B48065FDE2D75E8B5F00A;19000
-(rerunfilecheck)             After:  B4AD60E0D532454A0343CC4A93D23446;19195.
-Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: D1D5EB913460131B19DAF00677DD5E5F;2202.
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  0479C2F8CBE73FD9CE6DCFAF7B03DD53;19071.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1766,29 +1840,29 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35471 strings out of 478903
+ 35456 strings out of 478903
  100000,1977958 words of node,token memory allocated
- 1035 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 132 attribute, 80 g
-lue_spec, 68 attribute_list, 1 write nodes
-   avail lists: 1:4,2:908,3:340,4:56,5:503,6:74,7:9025,8:80,9:456,10:28,11:1035
- 53809 multiletter control sequences out of 65536+600000
- 116 fonts using 28972771 bytes
+ 1051 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 144 attribute, 76 g
+lue_spec, 74 attribute_list, 1 write nodes
+   avail lists: 1:4,2:802,3:181,4:57,5:522,6:38,7:7593,8:82,9:541,10:28,11:885
+ 53800 multiletter control sequences out of 65536+600000
+ 116 fonts using 28973099 bytes
  110i,12n,114p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,200000s
-<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texl
-ive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texli
-ve/2020/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf><c:/texlive/202
-0/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2020/texm
+<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><
+c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf><c:/tex
+live/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2
+020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2020/texm
 f-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2020/texmf
 -dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2020/texmf-
 dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2020/texmf-dist/
 fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2020/texmf-dist/fonts
 /opentype/public/lm/lmsans10-bold.otf><c:/texlive/2020/texmf-dist/fonts/opentype
 /public/lm/lmroman12-bold.otf>
-Output written on main.pdf (16 pages, 235509 bytes).
+Output written on main.pdf (17 pages, 236478 bytes).
 
-PDF statistics: 455 PDF objects out of 1000 (max. 8388607)
- 316 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 131072)
+PDF statistics: 409 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 88 named destinations out of 1000 (max. 131072)
  193 words of extra memory for PDF output out of 10000 (max. 100000000)
 
