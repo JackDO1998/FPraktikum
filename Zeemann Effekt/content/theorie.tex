@@ -47,9 +47,9 @@ Im folgenden wird die LS-Kopplung als gegebene und gute Näherung angenommen.
 
 Unter dem normalen Zeeman-Effekt wird die Aufspaltung derer Energieniveaus, dessen Spinquantenzahl $S = 0$ ist, unter Einfluss eines externen Magnetfeldes verstanden.
 Das aus dem Bahndrehimpuls $\hat{L}$ der Elektronen resultierende magnetische Moment wechselwirkt mit dem externen Magnetfeld und bewirkt eine Aufspaltung des Energieniveaus in $2L+1$ Niveaus.  Bei $L = 0$ findet keine Wechselwirkung und somit keine Aufspaltung in mehrere Niveaus statt.
-Die Verschiebung $\Delta E$ der Energie zum ursprünglichen Energieniveau berechnet sich zu:
+Die Verschiebung $\symup{\Delta} E$ der Energie zum ursprünglichen Energieniveau berechnet sich zu:
 \begin{equation}
-\Delta E = \mu_B B m_L
+\symup{\Delta} E = \mu_B B m_L
 \label{eq:nzeeman}
 \end{equation}
 Wobei $\mu_B$ das Bohrsche Magneton und $m_L$ die Magnetquantenzahl zur z-Komponente des Bahndrehimpulses $\hat{L_z}$ bezeichnet.\\
@@ -67,20 +67,43 @@ Wobei $\mu_B$ das Bohrsche Magneton und $m_L$ die Magnetquantenzahl zur z-Kompon
 Ist die Spinquantenzahl $S \neq 0$ so findet selbst bei $L = 0$ unter Einfluss eines schwachen Magnetfeldes eine Aufspaltung der Energiniveaus statt.
 Dieser Effekt wird anormaler Zeeman-Effekt genannt.
 Der Begriff eines schwachen Magnetfeldes bezeichnet hierbei, dass der Einfluss des Magnetfeldes auf die Enegieniveaus kleiner sein soll als der Einfluss der Spin-Bahn-Kopplung.
-Der nicht-verschwindende Spin $\hat{S}$ verursacht einen nicht-verschwindenden Anteil am magnetischen Moment des Atoms.
-Die Wechselwirkung des externen Magnetfeldes findet mit dem Gesamtdrehimpuls $\hat{J}$ statt.
-Die Energieniveaus spalten sich somit in $2J+1$ Niveaus auf.
-Die Verschiebung $\Delta E$ der Energie zum ursprünglichen Energieniveau berechnet sich zu:
+
+
+Klassisch betrachtet verursacht der Bahndrehimpuls eines Elektrons ein magnetisches Moment $\mu$ für das auch in der Quantenmechanik weiterhin gilt\footnote{siehe: https://qudev.phys.ethz.ch/static/content/science/BuchPhysikIV/PhysikIVch12.html}:
 \begin{equation}
-\Delta E = g_J \mu_B B m_J
-\label{eq:anzeeman}
-\end{equation}
-dabei bezeichnet $m_J$ die Magnetquantenzahl zur  z-Komponente des Gesamtdrehimpulses $\hat{J_z}$ und $g_J$ den Landé-Faktor.
-Der Landé-Faktor berechnet sich über:
+|\hat{\mu}| = - \frac{e}{2m_e} |\hat{l}|
+\end{end}
+Hierbei bezeichnet $e$ die Elementarladung und $m_e$ die Ruhemasse eines Elektrons.
+Das gyromagnetische Verhältnis $\gamma$ ist definiert als das Verhältnis aus magnetischem Moment zum Drehimpuls. Für den Bahndrehimpuls gilt folglich:
+\begin{equation}
+\gamma = \frac{|\hat{\mu}|}{|\hat{l}|} = - \frac{e}{2m_e}
+\label{eq:gyro1}
+\end{end}
+Der nicht-verschwindende Spin $\hat{s}$ des Elektrons verursacht einen nicht-verschwindenden Anteil am magnetischen Moment.
+Wird der Spin als klassischer Eigendrehimpuls des Elektrons ausgelegt, so sollte sich das selbe gyromagnetische Verhältnis ergeben wie es beim Bahndrehimpuls der Fall ist.
+Das gyromagnetische Verhältnis des Spins weicht jedoch stark davon ab.
+Die Abweichung des gyromagnetischen Verhältnisses und damit des magnetischen Moments vom klassisch zu erwartenden Wert wird durch den Landé-Faktor beschrieben.
+\begin{equation}
+\gamma = - g\cdot\frac{e}{2m_e}
+\end{end}
+Für den Bahndrehimpuls $|\hat{l}|$ ergibt sich $g$ zu $g_l = 1$, wie es aufgrund von \autoref{eq:gyro1} schon zu erwarten war.
+Der Landé-Faktor des Spins ergibt sich jedoch zu $g_s \approx 2$\footnote{https://www.chemie.de/lexikon/Landé-Faktor.html}.
+
+
+Die Wechselwirkung des externen Magnetfeldes findet jedoch mit dem Gesamtdrehimpuls $\hat{J}$ statt.
+Die Energieniveaus spalten sich somit in $2J+1$ Niveaus auf und für den Landé-Faktor gilt hier\footnote{https://www.chemie.de/lexikon/Landé-Faktor.html}:
 \begin{equation}
 g_J = 1+\frac{J(J+1) - L(L+1) + S(S+1)}{2 \cdot J(J+1)}
 \label{eq:lande}
 \end{equation}
+
+Die Verschiebung $\symup{\Delta} E$ der Energie zum ursprünglichen Energieniveau berechnet sich zu:
+\begin{equation}
+\symup{\Delta} E = g_J \mu_B B m_J
+\label{eq:anzeeman}
+\end{equation}
+dabei bezeichnet $m_J$ die Magnetquantenzahl zur z-Komponente des Gesamtdrehimpulses $\hat{J_z}$.
+
 
 
 
@@ -91,30 +114,21 @@ g_J = 1+\frac{J(J+1) - L(L+1) + S(S+1)}{2 \cdot J(J+1)}
 
 Beim Übergang von einem höheren Energieniveau in ein niedrigeres wird elektromagnetische Strahlung emittiert, dessen Energie der Energiedifferenz der beiden Niveaus entspricht.
 Die in diesem Versuch untersuchten Spektrallinien entstehen durch folgende Übergänge von Cadmium:
-\begin{enumerate}
-\item $^1P_1$ $\leftrightarrow$ $^1D_2$
-\begin{description}
-\item[] $\lambda = 643,8$\,nm
-\end{description}	
-\item $^3S_1$ $\leftrightarrow$ $^3P_1$
-\begin{description}
-\item[] $\lambda = 480,0$\,nm
-\end{description}	
-\end{enumerate}
+
+\begin{eqnarray}
+^1P_1 \leftrightarrow \,^1D_2 & & \text{$\lambda = 643,8$\,nm}
+^3S_1 \leftrightarrow \,^3P_1 & & \text{$\lambda = 480,0$\,nm}
+\end{eqnarray}
+
+
 wobei $\lambda$ die Wellenlänge der emittierten Strahlung des jeweiligen Überganges bezeichnet.\\
 Liegt ein äußeres Magnetfeld an, spaltet sich das Niveau $^1D_2$ in fünf Niveaus auf, während alle anderen Niveaus sich nur in drei aufspalten.
-Erlaubte Übergänge der aufgespaltenen Niveaus sind nur solche bei denen sich $m_J$ nur um maximal $1$ ändert.\\
-Unterschieden werden die Übergänge nach:
-\begin{itemize}
-\item $\Delta m_J = 0$
-\begin{description}
-\item[] Diese Übergange werden $\pi$- Übergange genannt
-\end{description}
-\item $\Delta m_J = \pm 1$
-\begin{description}
-\item[] Diese Übergange werden $\sigma_+$- bzw $\sigma_-$- Übergange genannt
-\end{description}	
-\end{itemize}
+Erlaubte Übergänge der aufgespaltenen Niveaus sind nur solche bei denen sich $m_J$ nur um maximal $1$ ändert.\footnote{Vgl. Haken und Wolf, Atom- und Quantenphysik, ISBN 978-3-540-67453-5, 2000, S. 295.}\\
+Unterschieden werden die Übergänge nach $\symup{\Delta} m_J = 0$, welche als $\pi$- Übergange bezeichnet werden und $\symup{\Delta} m_J = \pm 1$, die $\sigma_+$- bzw $\sigma_-$- Übergange genannt werden.
+
+
+
+
 Die Strahlung aus $\pi$-Übergängen ist parallel zum angelegten Magnetfeld polarisiert, während sie bei $\sigma_\pm$-Übergänge in der Ebene senkrecht zum Magnetfeld zirkular polarisiert ist.
 Letztere Polarisation wird in diesem Versuch als senkrecht zum Magnetfeld wahrgenommen, da dies der Projektion zirkular-polarisierter Strahlung auf eine entfernte Ebene parallel zum Magnetfeld entspricht.\\
 Die $\pi$-Übergänge von $^1P_1$ $\leftrightarrow$ $^1D_2$ haben nach \autoref{eq:nzeeman} die gleiche Energieverschiebung, womit sich keine Spektrallinien-Aufspaltung feststellen lässt.
@@ -131,12 +145,12 @@ Der Austrittswinkel hängt unter anderem von der Wellenlänge der einfallenden S
 Das Auflösungsvermögen der Lummer-Gehrke Platte wird beschrieben durch:
 \begin{equation}
     \label{eq:aufloesungsvermoegen}
-    A=\frac{\lambda}{\Delta\lambda}=\frac{L(n^2-1)}{\lambda}
+    A=\frac{\lambda}{\symup{\Delta}\lambda}=\frac{L(n^2-1)}{\lambda}
 \end{equation}
-Das Dispersionsgebiet $\Delta\lambda$ in welchem die Strahlen nicht interferieren ist gegeben durch:
+Das Dispersionsgebiet $\symup{\Delta}\lambda$ in welchem die Strahlen nicht interferieren ist gegeben durch:
 \begin{equation}
     \label{eq:dispersionsgebiet}
-    \Delta\lambda_D=\frac{\lambda^2}{2d\sqrt{n^2-1}}
+    \symup{\Delta}\lambda_D=\frac{\lambda^2}{2d\sqrt{n^2-1}}
 \end{equation}
 
 
