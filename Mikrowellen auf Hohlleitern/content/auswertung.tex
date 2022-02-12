@@ -13,32 +13,42 @@ In diesem Kapitel werden die aufgenommenen Messwerte ausgewertet.
 \label{sec:schwingungsmoden}
 
 In diesem Abschnitt wurden drei aufeinanderfolgende Schwingungsmoden des Klystrons vermessen und graphisch dargestellt.
-Ausserdem wurde die Bandbreite einer Mode vermessen und daraus die elektronische Bandbreite errechnet.
+Außerdem wurde die Bandbreite einer Mode vermessen und daraus die elektronische Bandbreite errechnet.
 Die Messwerte zu den verschiedenen Reflektorspannungen sind in \autoref{tab:schwingmod} zu finden und wurden in vielfachem der maximal gemessenen Leistung angegeben, da ultimativ nur die Lage zueinander interessiert und es so leichter vergleichbar ist.
+Die Resonatormoden n wurden dabei mittels \autoref{eq:resonatormode} berechnet und zur nächsten ganzen Zahl gerundet. Die für diese Rechnung nötige Resonatorlänge ergab sich über \autoref{eq:resonatorlange} zu:
+
+\begin{equation}
+\label{eq:auswertunglänge}
+\text{L} = \SI{2,68\pm0,40}{\milli\metre}
+\end{equation}
+
+Hier wurde für je zwei aufeinanderfolgende Resonatormoden aus \autoref{tab:schwingmod} die Resonatorlänge berechnet und daraus dann der Mittelwert gebildet. Für die Frequenz wurde der direkt gemessene Wert von $f =$ \SI{9014\pm0,5}{\mega\hertz} aus \autoref{tab:minima} verwendet. Alle Unsicherheiten wurden mittels Gaußscher Fehlerfortpflanzung berechnet und die Unsicherheit der Resonatorspannung zu $\sigma_\text{Reflektor} =$ \SI{10}{\volt} angenommen.
 
 
 \begin{table}
 \centering
 \caption{Schwingungsmoden für verschiedene Reflektorspannungen}
-\begin{tabular}{c c}
+\begin{tabular}{c c c}
 \toprule
-{$V$[V]} & {$P/P_{\text{max}}$}\\
+{$V$[V]} & {$P/P_{\text{max}}$} & {n}\\
 \midrule
-220&	0,833\\
-210	&0\\
-230	&0\\
+220&	0,833&5\\
+210	&0&\\
+230	&0&\\
 \midrule
-140	&1\\
-130	&0\\
-150	&0\\
+140	&1&6\\
+130	&0&\\
+150	&0&\\
 \midrule
-80	&0,777\\
-70	&0\\
-90	&0\\
+80	&0,777&7\\
+70	&0&\\
+90	&0&\\
 \bottomrule
 \label{tab:schwingmod}
 \end{tabular}
 \end{table}
+
+
 
 
 
@@ -78,7 +88,8 @@ Die Messwerte und sich ergebende Parabeln sind in \autoref{fig:schwingmod} dargs
 \end{figure}
 
 
-Die Messung zur Bandbreite einer Mode ist in \autoref{tab:bandbreite} zu finden. Für die Messwerte der Frequenz wurde eine Unsicherheit der Größe $0,5\,$MHz und für die Messwerte der Spannung eine Unsicherheit von $10\,$V angenommen.
+Die Messung zur Bandbreite einer Mode ist in \autoref{tab:bandbreite} zu finden.
+Für die Messwerte der Frequenz wurde eine Unsicherheit der Größe \SI{0,5}{\mega\hertz} und für die Messwerte der Spannung eine Unsicherheit von \SI{10}{\volt} angenommen.
 
 \begin{table}
 \centering
@@ -87,7 +98,7 @@ Die Messung zur Bandbreite einer Mode ist in \autoref{tab:bandbreite} zu finden.
 \toprule
 {$V$[V]} & {$f$[MHz]}\\
 \midrule
-220 & 9014\\
+220&9014\\
 210&8999\\
 230&9029\\
 \bottomrule
@@ -141,23 +152,33 @@ Die gemessenen Positionen zweier aufeinanderfolgender Minima der stehenden Welle
 Die Wellenlänge $\lambda_g$ ergibt sich aus dem doppelten des Abstands der Minima aus \autoref{tab:minima} zu:
 
 \begin{equation}
-\lambda_g = (50,6 \pm 0,141)\,\text{mm}
+\lambda_g = \SI{50,6\pm0,141}{\milli\metre}
 \label{eq:wellenlaenge}
 \end{equation}
 
+Für die Phasengeschwindigkeit $\v_\text{ph} = \lambda_g f$ ergibt sich:
+
+\begin{equation} \label{eq:phasengeschw}
+\begin{split}
+v_\text{ph} & = \SI{4,56\pm0,01e+8}{\metre\per\second} \\
+ & = \SI{1,520\pm0,004}{c}
+\end{split}
+\end{equation}
+
+wobei c = \SI{3e8}{\metre\per\second} die Lichtgeschwindigkeit im Vakuum ist.\footnote{siehe https://www.leifiphysik.de/optik/lichtausbreitung/grundwissen/lichtgeschwindigkeit}
 Alle Fehler in diesem Abschnitt wurden mittels Gaußscher Fehlerfortpflanzung ermittelt.
 Die Frequenz $f$ lässt sich berechnen über folgende Formel:
 
 \begin{equation}
-f = c\cdot\sqrt{ (\frac{1}{\lambda_g})^2 + (\frac{1}{2a})^2 }
+f = c\cdot\sqrt{ \frac{1}{\lambda_g^2} + \frac{1}{4a^2}}
 \label{eq:freq}
 \end{equation}
 
-Die Innenabmessung $a = (22,860 \pm 0,046)\,$mm des Hohlraumleiters und die Lichtgeschwindigkeit $c = 3\cdot 10^{11} \frac{\text{mm}}{\text{s}}$ wurden dabei der Versuchsanleitung entnommen.
+Die Innenabmessung $a =$ \SI{22,860\pm0,046}{\milli\metre} des Hohlraumleiters wurde dabei der Versuchsanleitung entnommen.
 Daraus ergibt sich die Frequenz zu:
 
 \begin{equation}
-f = (8843,47 \pm 14,79)\,\text{MHz}
+f = \SI{8843,47\pm14}{\mega\hertz}
 \label{eq:freq2}
 \end{equation}
 
@@ -234,7 +255,7 @@ Die direkte Messung der Welligkeit mittels des SWR-Meters für verschiedene Sond
 \end{table}
 
 
-Die Messung zur 3\,dB-Methode ist in \autoref{tab:3db} zu finden. Die Werte $d_1$ und $d_2$ geben die Stellen an, an denen der Ausschlag des SWR-Meters um 3\,dB größer war als am dazu naheliegendsten Minimum. Der Abstand zweier aufeinanderfolgender Minima ist auch eingetragen, um daraus wie in \autoref{sec:fwd} die Wellenlänge $\lambda_g$ zu brechnen.
+Die Messung zur \SI{3}{\decibel}-Methode ist in \autoref{tab:3db} zu finden. Die Werte $d_1$ und $d_2$ geben die Stellen an, an denen der Ausschlag des SWR-Meters um \SI{3}{\decibel}  größer war als am dazu naheliegendsten Minimum. Der Abstand zweier aufeinanderfolgender Minima ist auch eingetragen, um daraus wie in \autoref{sec:fwd} die Wellenlänge $\lambda_g$ zu brechnen.
 
 
 
@@ -258,7 +279,7 @@ S = \frac{\lambda_g}{\pi (d_1 - d_2)}
 \label{eq:welligkeit1}
 \end{equation}
 
-Für die Unsicherheiten der Entfernungsmessung wurden $0,005$\,mm angenommen. Damit berechnet sich das Stehwellenverhältnis zu:
+Für die Unsicherheiten der Entfernungsmessung wurden \SI{0,005}{\milli\metre} angenommen. Damit berechnet sich das Stehwellenverhältnis zu:
 
 \begin{equation}
 S = 9,025 \pm 0,038
@@ -296,7 +317,7 @@ S = 12,589 \pm 2,0497
 \label{eq:abschw2}
 \end{equation}
 
-Die Unsicherheit der Dämpfung wurde hierbei zu 1\,dB angenommen.
+Die Unsicherheit der Dämpfung wurde hierbei zu \SI{1}{\decibel}  angenommen.
 
 
 
