@@ -1,23 +1,48 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}\relax 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Das Bändermodell}{3}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Die effektive Masse}{3}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Dotierung}{4}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.1}n-Dotierung}{4}{subsubsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.2}p-Dotierung}{5}{subsubsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4}Doppelbrechung}{5}{subsection.2.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.4.1}Das Glan-Thompson-Prisma}{6}{subsubsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5}Die zirkulare Doppelbrechung}{6}{subsection.2.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6}Der Faradayeffekt}{7}{subsection.2.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.6.1}Berechnung des Rotationswinkels der Polarisationebene}{7}{subsubsection.2.6.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Fehler}{8}{section.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Durchführung}{9}{section.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Aufbau}{9}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Justierung der Messapparatur}{9}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Versuchsdurchführung}{11}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Auswertung}{11}{section.5}%
-\contentsline {section}{\numberline {6}Diskussion}{11}{section.6}%
-\contentsline {section}{\numberline {7}Literatur}{11}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Magnetflussdichte am Ort der Probe}{11}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Rotationswinkel der Faraday-Rotation}{12}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Effektive Masse}{14}{subsection.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Diskussion}{20}{section.6}%
+\defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
