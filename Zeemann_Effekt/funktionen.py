@@ -123,21 +123,34 @@ def wellenlaengenverschiebung(DELTAs,deltas,deltalam):
         a=0
         returnarray1=[]
         while a < len(deltas):
-            returnarray1.append(round(((deltas[a]*deltalam)/2*DELTAs[a]),4))
+            returnarray1.append(((deltas[a]*deltalam)/(2*DELTAs[a])))
+            if a==3:
+                print(deltas[a],deltalam,DELTAs[a],returnarray1[a])
             a=a+1
         
-        mittelwert=round(sum(returnarray1)/len(returnarray1),2)
-        mittelwertfehler=round(np.std(returnarray1, ddof=1) / np.sqrt(np.size(returnarray1)),2)
-        Mittelwert=ufloat(mittelwert,mittelwertfehler)
-        return returnarray1 , Mittelwert 
+        
+        return returnarray1  
     #else:
         #print('Die Arrays haben nicht die selbe Länge!!!')
-    
-    
+def mittelwert(array,raus):
+    korrarray=[]
+    a=0
+    while a <len(array):
+        if a!=raus:
+            korrarray.append(array[a])
+            a=a+1
+        else:
+            a=a+1
+
+    mittelwert=sum(korrarray)/len(korrarray)
+    mittelwertfehler=np.std(korrarray, ddof=1) / np.sqrt(np.size(korrarray))
+    Mittelwert=ufloat(mittelwert,mittelwertfehler)
+    return Mittelwert
 
 def landefaktoren(deltalamda,B,Lambda):
     mu=const.value('Bohr magneton')
     g=(deltalamda*const.h*const.c)/(mu*B*Lambda**2)
+    
     return g
     
 def tabellenkopf(speicherpfad,caption,label,dokuentenname):
@@ -159,7 +172,7 @@ def tabellenkopf(speicherpfad,caption,label,dokuentenname):
     datei2.write("\n")#springe in die nächste zeile
     datei2.write("\\toprule") 
     datei2.write("\n")#springe in die nächste zeile
-    datei2.write("{Mode Nr.} & {$\Delta S$/px}&{$\delta S$ /px}&{$\delta \lambda$}\\" + "\\") 
+    datei2.write("{Mode Nr.} & {$\Delta S$/px}&{$\delta S$ /px}&{$\delta \lambda$ /pm}\\" + "\\") 
     datei2.write("\n")#springe in die nächste zeile
     datei2.write("\midrule") 
     datei2.write("\n")#springe in die nächste zeile
@@ -176,7 +189,7 @@ def tabellenkoerper(datensatz1,datensatz2,datensatz3,speichern):
         Nr=np.linspace(0,len(datensatz2),len(datensatz2))
         while a < len(datensatz2):
             datei2=open(speichern,'a')
-            tuple1=anfang+str(int(round(Nr[a],0))) +mitte+str(datensatz1[a]) + mitte + str(datensatz2[a]) + mitte + str(datensatz3[a]) + ende +ende2
+            tuple1=anfang+str(int(round(Nr[a],0))) +mitte+str(datensatz1[a]) + mitte + str(datensatz2[a]) + mitte + str((round(datensatz3[a]*1e12,2)))  + ende +ende2
             datei2.write(str(tuple1)) 
             datei2.write("\n")#springe in die nächste zeile
             datei2.close() # schließe die datei
@@ -194,7 +207,7 @@ def tabellenfuss(Mittelwert,speicherpfad):
     ende2='\\'
     durchschnitt='\diameter'
     pm='\pm'
-    tuple1=anfang+ durchschnitt +mitte+mitte + mitte + str(mittelwert) + pm +str(mittelwertfehler)+ ende +ende2
+    tuple1=anfang+ durchschnitt +mitte+mitte + mitte + str(round(mittelwert*1e12,2)) + pm +str(round(mittelwertfehler*1e12,2))+ ende +ende2
     datei2=open(speicherpfad,'a')
     datei2.write("\\midrule") 
     datei2.write("\n")#springe in die nächste zeile
